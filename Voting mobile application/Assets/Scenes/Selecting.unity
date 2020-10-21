@@ -1141,10 +1141,10 @@ RectTransform:
   m_Father: {fileID: 459902439}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.86731255}
-  m_AnchorMax: {x: 0.14, y: 0.97287506}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -55.999992, y: -72.111084}
+  m_AnchorMin: {x: 0, y: 0.9461552}
+  m_AnchorMax: {x: 0, y: 0.9461552}
+  m_AnchoredPosition: {x: 0, y: -7}
+  m_SizeDelta: {x: 54, y: 55}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &648096921
 MonoBehaviour:
@@ -1722,6 +1722,26 @@ MonoBehaviour:
     - m_Text: Select country
       m_Image: {fileID: 0}
     - m_Text: Option B
+      m_Image: {fileID: 0}
+    - m_Text: Option C
+      m_Image: {fileID: 0}
+    - m_Text: Option C
+      m_Image: {fileID: 0}
+    - m_Text: Option C
+      m_Image: {fileID: 0}
+    - m_Text: Option C
+      m_Image: {fileID: 0}
+    - m_Text: Option C
+      m_Image: {fileID: 0}
+    - m_Text: Option C
+      m_Image: {fileID: 0}
+    - m_Text: Option C
+      m_Image: {fileID: 0}
+    - m_Text: Option C
+      m_Image: {fileID: 0}
+    - m_Text: Option C
+      m_Image: {fileID: 0}
+    - m_Text: Option C
       m_Image: {fileID: 0}
     - m_Text: Option C
       m_Image: {fileID: 0}
@@ -3973,7 +3993,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Don't worry, we keep it anonymous, we don't use your data. Do you agree
+  m_Text: Don't worry, we keep it anonymous and don't use your data. Do you agree
     to social survey?
 --- !u!222 &2145944169
 CanvasRenderer:
