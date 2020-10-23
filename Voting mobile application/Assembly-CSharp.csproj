@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\DB_connect.cs" />
     <Compile Include="Assets\Scripts\OpenHyperlinks.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
@@ -304,6 +305,21 @@
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.10f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Data.Sqlite">
+      <HintPath>D:/Projects/Voting_mobile/Voting_mobile/Voting mobile application/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <HintPath>D:/Projects/Voting_mobile/Voting_mobile/Voting mobile application/Assets/Plugins/System.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>D:/Projects/Voting_mobile/Voting_mobile/Voting mobile application/Assets/Plugins/System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <HintPath>D:/Projects/Voting_mobile/Voting_mobile/Voting mobile application/Assets/Plugins/System.EnterpriseServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security">
+      <HintPath>D:/Projects/Voting_mobile/Voting_mobile/Voting mobile application/Assets/Plugins/System.Security.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.10f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -671,6 +687,9 @@
     <Reference Include="Unity.2D.Path.Editor">
       <HintPath>D:/Projects/Voting_mobile/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.DeviceSimulator.Tests.Common">
+      <HintPath>D:/Projects/Voting_mobile/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.DeviceSimulator.Tests.Common.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>D:/Projects/Voting_mobile/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -688,6 +707,9 @@
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>D:/Projects/Voting_mobile/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.DeviceSimulator.Editor">
+      <HintPath>D:/Projects/Voting_mobile/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.DeviceSimulator.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
       <HintPath>D:/Projects/Voting_mobile/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
@@ -730,12 +752,6 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>D:/Projects/Voting_mobile/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.DeviceSimulator.Tests.Common">
-      <HintPath>D:/Projects/Voting_mobile/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.DeviceSimulator.Tests.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.DeviceSimulator.Editor">
-      <HintPath>D:/Projects/Voting_mobile/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.DeviceSimulator.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
