@@ -1643,6 +1643,7 @@ GameObject:
   - component: {fileID: 877868027}
   - component: {fileID: 877868026}
   - component: {fileID: 877868025}
+  - component: {fileID: 877868028}
   m_Layer: 5
   m_Name: Select country
   m_TagString: Untagged
@@ -1721,33 +1722,20 @@ MonoBehaviour:
     m_Options:
     - m_Text: Select country
       m_Image: {fileID: 0}
-    - m_Text: Option B
-      m_Image: {fileID: 0}
-    - m_Text: Option C
-      m_Image: {fileID: 0}
-    - m_Text: Option C
-      m_Image: {fileID: 0}
-    - m_Text: Option C
-      m_Image: {fileID: 0}
-    - m_Text: Option C
-      m_Image: {fileID: 0}
-    - m_Text: Option C
-      m_Image: {fileID: 0}
-    - m_Text: Option C
-      m_Image: {fileID: 0}
-    - m_Text: Option C
-      m_Image: {fileID: 0}
-    - m_Text: Option C
-      m_Image: {fileID: 0}
-    - m_Text: Option C
-      m_Image: {fileID: 0}
-    - m_Text: Option C
-      m_Image: {fileID: 0}
-    - m_Text: Option C
-      m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 877868028}
+        m_MethodName: Selected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &877868026
 MonoBehaviour:
@@ -1786,6 +1774,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 877868023}
   m_CullTransparentMesh: 0
+--- !u!114 &877868028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877868023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb34f63ca6c5f0845aa471ed936eac38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectCountries: {fileID: 877868025}
+  countryName: {fileID: 998229103}
 --- !u!1 &877917540
 GameObject:
   m_ObjectHideFlags: 0
@@ -1798,6 +1800,7 @@ GameObject:
   - component: {fileID: 877917544}
   - component: {fileID: 877917543}
   - component: {fileID: 877917542}
+  - component: {fileID: 877917545}
   m_Layer: 5
   m_Name: Select city
   m_TagString: Untagged
@@ -1876,10 +1879,6 @@ MonoBehaviour:
     m_Options:
     - m_Text: Select city
       m_Image: {fileID: 0}
-    - m_Text: Option B
-      m_Image: {fileID: 0}
-    - m_Text: Option C
-      m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1921,6 +1920,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 877917540}
   m_CullTransparentMesh: 0
+--- !u!114 &877917545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877917540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f483f1c970df843ad2a84d3565b859, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectCity: {fileID: 877917542}
+  cityName: {fileID: 1322856256}
 --- !u!1 &921799802
 GameObject:
   m_ObjectHideFlags: 0
