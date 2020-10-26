@@ -4,21 +4,28 @@ using UnityEngine;
 using Mono.Data.Sqlite;
 using System.Data;
 using UnityEngine.UI;
+using System.IO;
+using System.Data.SqlTypes;
 
 public class SelectCountry : MonoBehaviour
 {
     public Dropdown selectCountries;
+    public Dropdown selectCity;
+    public Text cityName;
     public Text countryName;
     private UserState userState;
     private string[] textValue;
-    public static bool isSelected = false;
+    List<string> json;
+    List<string> namesOfCity;
+    int i = 0;
+
     void Start()
     {
-        string connectionString = "URI=file:" + Application.dataPath + "/DataBases/country.sqlite";
+        string connectionString = "URI=file:" + Application.dataPath + "/DataBases/country.db";
         using (IDbConnection dbcon = (IDbConnection)new SqliteConnection(connectionString))
         {
             dbcon.Open();
-            var sql = "SELECT * FROM countries";
+            var sql = "SELECT * FROM country";
             using (IDbCommand dbcmd = dbcon.CreateCommand())
             {
                 dbcmd.CommandText = sql;
@@ -26,35 +33,86 @@ public class SelectCountry : MonoBehaviour
                 {
                     while (reader.Read())
                     {
-                        selectCountries.options.Add(new Dropdown.OptionData() { text = reader.GetInt32(0) + ". " + reader.GetString(2) });
+                        selectCountries.options.Add(new Dropdown.OptionData() { text = reader.GetString(3) + ". " + reader.GetString(1)});
                         // "id: {0}; sortname: {1}; name: {2}; phonecode: {3};";
                     }
                 }
             }
             dbcon.Close();
         }
+        namesOfCity = new List<string>();
+        json = new List<string>();
+    }
+
+    public void DBSelect()
+    {
+        string connectionString = "URI=file:" + Application.dataPath + "/DataBases/country.db";
+        using (IDbConnection dbcon = (IDbConnection)new SqliteConnection(connectionString))
+        {
+            dbcon.Open();
+            var sql = "SELECT * FROM cities WHERE cc_iso = " + "'" + json[1] + "'";
+            using (IDbCommand dbcmd = dbcon.CreateCommand())
+            {
+                dbcmd.CommandText = sql;
+                using (IDataReader reader = dbcmd.ExecuteReader())
+                {
+                    selectCity.ClearOptions();
+                    while (reader.Read())
+                    {
+                        namesOfCity.Add(reader.GetString(2));
+                        //selectCity.options.Add(new Dropdown.OptionData() { text = reader.GetString(2) });
+                        // "id: {0}; sortname: {1}; name: {2}; phonecode: {3};";
+                    }
+
+                    StartCoroutine(PrintOptions(0));
+                }
+            }
+            dbcon.Close();
+        }
+    }
+
+    private IEnumerator PrintOptions(float time)
+    {
+        while (true)
+        {
+            yield return null;
+            if (namesOfCity.Count > 0)
+            {
+                selectCity.AddOptions(new List<string> { namesOfCity[i] });
+                namesOfCity.RemoveAt(i);
+            }
+        }
+    }
+    public void SaveData()
+    {
+        textValue = countryName.text.Split('.');
+        json.Add(textValue[0].Trim());
+        json.Add(textValue[1].Trim());
     }
 
     public void SaveToJson()
     {
-        Debug.Log(countryName);
-        textValue = countryName.text.Split('.');
         userState = new UserState()
         {
-            id = textValue[0],
-            country = textValue[1].Trim()
+            id = json[1],
+            country = json[0],
+            city = cityName.text
         };
         string potion = JsonUtility.ToJson(userState);
         System.IO.File.WriteAllText(Application.dataPath + "/DataBases/data.json", potion);
     }
 
-    public void Selected()
+    public void SelecttoCountry()
     {
-        if (selectCountries.value > 0)
-        {
-            SaveToJson();
-            isSelected = true;
-        }
+        SaveData();
+        DBSelect();
+        Debug.Log(json[0] + namesOfCity.Count);
+    }
+
+    public void SelectCity()
+    {
+        SaveToJson();
+        json.Clear();
     }
 
     [System.Serializable]
