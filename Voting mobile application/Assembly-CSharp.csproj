@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\ButtonMovement.cs" />
     <Compile Include="Assets\Scripts\LoadVPersCab.cs" />
     <Compile Include="Assets\Scripts\OpenHyperlinks.cs" />
+    <Compile Include="Assets\Scripts\ScreenFrame.cs" />
     <Compile Include="Assets\Scripts\SelectCountry.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
