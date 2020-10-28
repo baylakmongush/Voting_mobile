@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\PrevScene.cs" />
     <Compile Include="Assets\Scripts\ScreenFrame.cs" />
     <Compile Include="Assets\Scripts\SelectCountry.cs" />
+    <Compile Include="Assets\Scripts\Server\DBManager.cs" />
     <Compile Include="Assets\Scripts\url.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
