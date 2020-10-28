@@ -6,6 +6,7 @@ using System.Data;
 using UnityEngine.UI;
 using System.IO;
 using System.Data.SqlTypes;
+using UnityEngine.SceneManagement;
 
 public class SelectCountry : MonoBehaviour
 {
@@ -13,10 +14,12 @@ public class SelectCountry : MonoBehaviour
     public Dropdown selectCity;
     public Text cityName;
     public Text countryName;
+    public Text age;
     private UserState userState;
     private string[] textValue;
     List<string> json;
     List<string> namesOfCity;
+    public Text log;
     int i = 0;
 
     void Start()
@@ -34,7 +37,6 @@ public class SelectCountry : MonoBehaviour
                     while (reader.Read())
                     {
                         selectCountries.options.Add(new Dropdown.OptionData() { text = reader.GetString(3) + ". " + reader.GetString(1)});
-                        // "id: {0}; sortname: {1}; name: {2}; phonecode: {3};";
                     }
                 }
             }
@@ -56,38 +58,26 @@ public class SelectCountry : MonoBehaviour
                 dbcmd.CommandText = sql;
                 using (IDataReader reader = dbcmd.ExecuteReader())
                 {
-                    selectCity.ClearOptions();
                     while (reader.Read())
                     {
-                       // namesOfCity.Add(reader.GetString(0));
                         selectCity.options.Add(new Dropdown.OptionData() { text = reader.GetString(0) });
-                        // "id: {0}; sortname: {1}; name: {2}; phonecode: {3};";
                     }
-
-                   // StartCoroutine(PrintOptions(0));
                 }
             }
             dbcon.Close();
         }
     }
 
-    private IEnumerator PrintOptions(float time)
-    {
-        while (true)
-        {
-            yield return null;
-            if (namesOfCity.Count > 0)
-            {
-                selectCity.AddOptions(new List<string> { namesOfCity[i] });
-                namesOfCity.RemoveAt(i);
-            }
-        }
-    }
     public void SaveData()
     {
         textValue = countryName.text.Split('.');
         json.Add(textValue[0].Trim());
         json.Add(textValue[1].Trim());
+    }
+
+    public void SaveCity()
+    {
+        json.Add(cityName.text);
     }
 
     public void SaveToJson()
@@ -96,23 +86,45 @@ public class SelectCountry : MonoBehaviour
         {
             id = json[1],
             country = json[0],
-            city = cityName.text
+            city = json[2]
         };
-        string potion = JsonUtility.ToJson(userState);
-        System.IO.File.WriteAllText(Application.dataPath + "/DataBases/data.json", potion);
     }
 
     public void SelecttoCountry()
     {
+        json.Clear();
+        selectCity.options.RemoveRange(1, selectCity.options.Count - 1);
         SaveData();
         DBSelect();
-        Debug.Log(json[0] + namesOfCity.Count);
     }
 
     public void SelectCity()
     {
-        SaveToJson();
-        json.Clear();
+        if (countryName.text != "Select country" && countryName.text != null)
+        {
+            SaveCity();
+            SaveToJson();
+            json.Clear();
+        }
+    }
+
+    public void SelectAge()
+    {
+        if (countryName.text != "Select country" && cityName.text != "Select city")
+        {
+            Debug.Log(age.text);
+            userState.age = age.text;
+            string potion = JsonUtility.ToJson(userState);
+            System.IO.File.WriteAllText(Application.dataPath + "/DataBases/data.json", potion);
+        }
+    }
+
+    public void NextLevel()
+    {
+        if (countryName.text != "Select country" && cityName.text != "Select city" && age.text != "Have you been 18 already?")
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        else
+            log.enabled = true;
     }
 
     [System.Serializable]
@@ -121,5 +133,6 @@ public class SelectCountry : MonoBehaviour
         public string id;
         public string country;
         public string city;
+        public string age;
     }
 }
