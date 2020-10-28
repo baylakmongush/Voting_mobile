@@ -50,7 +50,7 @@ public class SelectCountry : MonoBehaviour
         using (IDbConnection dbcon = (IDbConnection)new SqliteConnection(connectionString))
         {
             dbcon.Open();
-            var sql = "SELECT * FROM cities WHERE cc_iso = " + "'" + json[1] + "'";
+            var sql = "SELECT DISTINCT name FROM `world-cities` WHERE country = " + "'" + json[0] + "' ORDER BY name";
             using (IDbCommand dbcmd = dbcon.CreateCommand())
             {
                 dbcmd.CommandText = sql;
@@ -59,12 +59,12 @@ public class SelectCountry : MonoBehaviour
                     selectCity.ClearOptions();
                     while (reader.Read())
                     {
-                        namesOfCity.Add(reader.GetString(2));
-                        //selectCity.options.Add(new Dropdown.OptionData() { text = reader.GetString(2) });
+                       // namesOfCity.Add(reader.GetString(0));
+                        selectCity.options.Add(new Dropdown.OptionData() { text = reader.GetString(0) });
                         // "id: {0}; sortname: {1}; name: {2}; phonecode: {3};";
                     }
 
-                    StartCoroutine(PrintOptions(0));
+                   // StartCoroutine(PrintOptions(0));
                 }
             }
             dbcon.Close();
