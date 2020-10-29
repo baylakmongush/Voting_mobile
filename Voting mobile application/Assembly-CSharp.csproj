@@ -258,8 +258,29 @@
     <Reference Include="UnityEditor">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.10f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="I18N.CJK">
+      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Assets/Plugins/I18N.CJK.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N">
+      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Assets/Plugins/I18N.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N.MidEast">
+      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Assets/Plugins/I18N.MidEast.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N.Other">
+      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Assets/Plugins/I18N.Other.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N.Rare">
+      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Assets/Plugins/I18N.Rare.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N.West">
+      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Assets/Plugins/I18N.West.dll</HintPath>
+    </Reference>
     <Reference Include="Mono.Data.Sqlite">
       <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="mysql.data">
+      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Assets/Plugins/mysql.data.dll</HintPath>
     </Reference>
     <Reference Include="System.Data">
       <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Assets/Plugins/System.Data.dll</HintPath>
@@ -269,30 +290,6 @@
     </Reference>
     <Reference Include="System.Security">
       <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Assets/Plugins/System.Security.dll</HintPath>
-    </Reference>
-    <Reference Include="MySql.Data">
-      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Assets/Plugins/MySql.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="I18N">
-      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Assets/Plugins/I18N.dll</HintPath>
-    </Reference>
-    <Reference Include="I18N.CJK">
-      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Assets/Plugins/I18N.CJK.dll</HintPath>
-    </Reference>
-    <Reference Include="I18N.MidEast">
-      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Assets/Plugins/I18N.MidEast.dll</HintPath>
-    </Reference>
-    <Reference Include="I18N.Rare">
-      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Assets/Plugins/I18N.Rare.dll</HintPath>
-    </Reference>
-    <Reference Include="I18N.West">
-      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Assets/Plugins/I18N.West.dll</HintPath>
-    </Reference>
-    <Reference Include="I18N.Other">
-      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Assets/Plugins/I18N.Other.dll</HintPath>
-    </Reference>
-    <Reference Include="mysql.data">
-      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Assets/Plugins/mysql.data.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.10f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -642,11 +639,20 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Animation.Runtime">
+      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.PixelPerfect.Editor">
       <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.SpriteShape.Editor">
+      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Path.Editor">
+      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.DeviceSimulator.Tests.Common">
       <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.DeviceSimulator.Tests.Common.dll</HintPath>
@@ -657,35 +663,53 @@
     <Reference Include="Unity.Timeline">
       <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Animation.Triangle.Runtime">
+      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="PsdPlugin">
+      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CollabProxy.Editor">
+      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.DeviceSimulator.Editor">
       <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.DeviceSimulator.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.PixelPerfect">
-      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    <Reference Include="Unity.2D.Psdimporter.Editor">
+      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
       <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.Common.Runtime">
       <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.SpriteShape.Runtime">
+      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.PixelPerfect">
+      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Animation.Editor">
+      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Editor">
       <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
@@ -693,35 +717,8 @@
     <Reference Include="Unity.InternalAPIEditorBridge.001">
       <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.2D.Animation.Runtime">
-      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Animation.Triangle.Runtime">
-      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Mathematics">
-      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Animation.Editor">
-      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Mathematics.Editor">
-      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.SpriteShape.Editor">
-      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Path.Editor">
-      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.SpriteShape.Runtime">
-      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="PsdPlugin">
-      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Psdimporter.Editor">
-      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>

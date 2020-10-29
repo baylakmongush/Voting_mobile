@@ -9,25 +9,19 @@ public class DBManager : MonoBehaviour
 {
     void Start()
     {
-        string cs = @"server=127.0.0.1;userid=root;
-           password=adventuretimes!12;database=voting;Pooling=true;CharSet=utf8;";
+        string cs = "Database=voting;Data Source=localhost;User Id=root;Password=adventuretimes!12;CharSet=utf8;";
 
         MySqlConnection conn = null;
 
         try
         {
             conn = new MySqlConnection(cs);
+            //conn.Open();
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO valuesvoting (value1, value2) VALUES ('ponchik', 'pirozhok')", conn);
+            cmd.Connection = conn;
             conn.Open();
-            MySqlCommand cmd = new MySqlCommand("SELECT * FROM `valuesvoting`", conn);
-            var result = cmd.ExecuteReader();
-            while (result.Read())
-            {
-                int value = result.GetInt32(0);
-                string name = result.GetString(1);
-                string rand = result.GetString(2);
-
-                Debug.Log("value= " + value + "  name =" + name + "  random =" + rand);
-            }
+            cmd.ExecuteNonQuery();
+            cmd.Connection.Close();
         }
         catch (MySqlException ex)
         {
