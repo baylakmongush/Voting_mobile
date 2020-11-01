@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\ScreenFrame.cs" />
     <Compile Include="Assets\Scripts\SelectCountry.cs" />
     <Compile Include="Assets\Scripts\Server\DBManager.cs" />
+    <Compile Include="Assets\Scripts\Server\PostData.cs" />
     <Compile Include="Assets\Scripts\Server\Request.cs" />
     <Compile Include="Assets\Scripts\url.cs" />
     <Reference Include="UnityEngine">
