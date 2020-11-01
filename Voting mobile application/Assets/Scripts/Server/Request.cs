@@ -12,7 +12,7 @@ public class Request : MonoBehaviour
 	public Text value2;
 	void Start()
 	{
-		DontDestroyOnLoad(this);
+		//DontDestroyOnLoad(this);
 		StartCoroutine(GetRequest("http://127.0.0.1:5000/list"));
 	}
 
@@ -27,7 +27,7 @@ public class Request : MonoBehaviour
 			}
 			else
 			{
-				data = System.Text.Encoding.UTF8.GetString(webRequest.downloadHandler.data);
+				data = webRequest.downloadHandler.text;
 				SaveData dataSave = JsonUtility.FromJson<SaveData>(data);
 				value1.text = dataSave.value1;
 				value2.text = dataSave.value2;
