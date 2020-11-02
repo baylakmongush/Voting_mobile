@@ -36,7 +36,7 @@ public class GetStatistics : MonoBehaviour
 	public Image val2AgeImage;
 	void Start()
 	{
-		StartCoroutine(GetRequest("http://127.0.0.1:5000/result"));
+		StartCoroutine(GetRequest("https://vote-adm.herokuapp.com/result"));
 	}
 
 	IEnumerator GetRequest(string uri)

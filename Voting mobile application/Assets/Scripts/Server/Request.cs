@@ -13,7 +13,7 @@ public class Request : MonoBehaviour
 	void Start()
 	{
 		//DontDestroyOnLoad(this);
-		StartCoroutine(GetRequest("http://127.0.0.1:5000/list"));
+		StartCoroutine(GetRequest("https://vote-adm.herokuapp.com/list"));
 	}
 
 	IEnumerator GetRequest(string uri)

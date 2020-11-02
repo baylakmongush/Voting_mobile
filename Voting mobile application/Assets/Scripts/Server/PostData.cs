@@ -15,7 +15,7 @@ public class PostData : MonoBehaviour
 	void Start()
 	{
 		//DontDestroyOnLoad(this);
-		StartCoroutine(SetRequest("http://127.0.0.1:5000/data"));
+		StartCoroutine(SetRequest("https://vote-adm.herokuapp.com/data"));
 	}
 
 	IEnumerator SetRequest(string uri)
