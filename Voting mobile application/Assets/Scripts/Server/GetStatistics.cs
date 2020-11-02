@@ -7,6 +7,7 @@ using UnityEngine.Networking;
 public class GetStatistics : MonoBehaviour
 {
 	string data;
+	public Text term;
 	public Text val1;
 	public Text val2;
 
@@ -52,6 +53,7 @@ public class GetStatistics : MonoBehaviour
 				data = webRequest.downloadHandler.text;
 				Debug.Log(data);
 				SaveStat dataSave = JsonUtility.FromJson<SaveStat>(data);
+				term.text += dataSave.sum;
 				val1.text = dataSave.value1 + "\n" + dataSave.value1Stat1 + "%";
 				val2.text = dataSave.value2 + "\n" + dataSave.value2Stat1 + "%";
 
@@ -97,6 +99,7 @@ public class GetStatistics : MonoBehaviour
 
 public class SaveStat
 {
+	public string sum;
 	public string value1;
 	public string value2;
 	public string value1Stat1;

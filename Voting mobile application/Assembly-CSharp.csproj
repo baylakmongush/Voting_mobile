@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\Button2Value.cs" />
     <Compile Include="Assets\Scripts\ButtonMovement.cs" />
     <Compile Include="Assets\Scripts\EnableSettings.cs" />
+    <Compile Include="Assets\Scripts\FullStatsOpen.cs" />
     <Compile Include="Assets\Scripts\Greeting.cs" />
     <Compile Include="Assets\Scripts\LoadVPersCab.cs" />
     <Compile Include="Assets\Scripts\NextScene.cs" />
