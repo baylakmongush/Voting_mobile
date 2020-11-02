@@ -81,7 +81,10 @@ public class GetStatistics : MonoBehaviour
 				val1CityValue.value = value1Stat3;
 				val2CityValue.value = value2Stat3;
 
-				Age.text = dataSave.age;
+				if (dataSave.age == "Yes")
+					Age.text = "Over 18 years old";
+				else
+					Age.text = "Under 18 years old";
 				float value1Stat4 = float.Parse(dataSave.value1Stat2);
 				float value2Stat4 = float.Parse(dataSave.value2Stat2);
 				val1Agetext.text = dataSave.value1 + " (" + value1Stat4 + "%" + ")";

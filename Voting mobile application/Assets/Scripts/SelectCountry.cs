@@ -22,9 +22,22 @@ public class SelectCountry : MonoBehaviour
     public Text log;
     int i = 0;
 
+    private static string GetDatabasePath()
+    {
+        string fileName = "country.db";
+        #if UNITY_EDITOR
+                return Path.Combine(Application.streamingAssetsPath, fileName);
+        #endif
+        #if UNITY_ANDROID
+                    string filePath = Path.Combine(Application.persistentDataPath, fileName);
+                    if(!File.Exists(filePath)) UnpackDatabase(filePath);
+                    return filePath;
+        #endif
+    }
+
     void Start()
     {
-        string connectionString = "URI=file:" + Application.dataPath + "/DataBases/country.db";
+        string connectionString = "URI=file:" + GetDatabasePath();
         using (IDbConnection dbcon = (IDbConnection)new SqliteConnection(connectionString))
         {
             dbcon.Open();
@@ -48,7 +61,7 @@ public class SelectCountry : MonoBehaviour
 
     public void DBSelect()
     {
-        string connectionString = "URI=file:" + Application.dataPath + "/DataBases/country.db";
+        string connectionString = "URI=file:" + GetDatabasePath();
         using (IDbConnection dbcon = (IDbConnection)new SqliteConnection(connectionString))
         {
             dbcon.Open();
