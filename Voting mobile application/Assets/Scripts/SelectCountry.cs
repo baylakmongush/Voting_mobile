@@ -21,23 +21,40 @@ public class SelectCountry : MonoBehaviour
     List<string> namesOfCity;
     public Text log;
     int i = 0;
+    string DBPath;
 
     private static string GetDatabasePath()
     {
-        string fileName = "country.db";
         #if UNITY_EDITOR
-                return Path.Combine(Application.streamingAssetsPath, fileName);
+                return Path.Combine(Application.streamingAssetsPath, "country.db");
         #endif
-        #if UNITY_ANDROID
-                    string filePath = Path.Combine(Application.persistentDataPath, fileName);
+        #if UNITY_STANDALONE
+                    string filePath = Path.Combine(Application.dataPath, fileName);
                     if(!File.Exists(filePath)) UnpackDatabase(filePath);
                     return filePath;
+        #elif UNITY_ANDROID
+                string filePath = Path.Combine(Application.persistentDataPath, "country.db");
+                        if (!File.Exists(filePath)) UnpackDatabase(filePath);
+                        return filePath;
         #endif
+    }
+
+    /// <summary> Распаковывает базу данных в указанный путь. </summary>
+    /// <param name="toPath"> Путь в который нужно распаковать базу данных. </param>
+    private static void UnpackDatabase(string toPath)
+    {
+        string fromPath = Path.Combine(Application.streamingAssetsPath, "country.db");
+
+        WWW reader = new WWW(fromPath);
+        while (!reader.isDone) { }
+
+        File.WriteAllBytes(toPath, reader.bytes);
     }
 
     void Start()
     {
-        string connectionString = "URI=file:" + GetDatabasePath();
+        DBPath = GetDatabasePath();
+        string connectionString = "URI=file:" + DBPath;
         using (IDbConnection dbcon = (IDbConnection)new SqliteConnection(connectionString))
         {
             dbcon.Open();
@@ -61,7 +78,7 @@ public class SelectCountry : MonoBehaviour
 
     public void DBSelect()
     {
-        string connectionString = "URI=file:" + GetDatabasePath();
+        string connectionString = "URI=file:" + DBPath;
         using (IDbConnection dbcon = (IDbConnection)new SqliteConnection(connectionString))
         {
             dbcon.Open();
