@@ -25,7 +25,7 @@ public class PostData : MonoBehaviour
 		byte[] bodyRaw = Encoding.UTF8.GetBytes(json);
 		request.uploadHandler = (UploadHandler)new UploadHandlerRaw(bodyRaw);
 		request.downloadHandler = (DownloadHandler)new DownloadHandlerBuffer();
-		request.SetRequestHeader("Content-Type", "application/json");
+	// request.SetRequestHeader("Content-Type", "application/json");
 		yield return request.SendWebRequest();
 
 		if (request.error != null)
