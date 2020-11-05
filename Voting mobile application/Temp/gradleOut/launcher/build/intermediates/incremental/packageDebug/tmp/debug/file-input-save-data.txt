@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Nov 03 20:06:21 MSK 2020
+#Wed Nov 04 19:18:56 MSK 2020
 17.baseType=DIRECTORY
 4.path=classes.dex
 25.base=D\:\\Projects\\game\\Voting_mobile\\Voting mobile application\\Temp\\gradleOut\\launcher\\build\\intermediates\\merged_assets\\debug\\out

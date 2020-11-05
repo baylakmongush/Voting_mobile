@@ -29,13 +29,13 @@ public class SelectCountry : MonoBehaviour
                 return Path.Combine(Application.streamingAssetsPath, "country.db");
         #endif
         #if UNITY_STANDALONE
-                    string filePath = Path.Combine(Application.dataPath, fileName);
-                    if(!File.Exists(filePath)) UnpackDatabase(filePath);
-                    return filePath;
+                            string filePath = Path.Combine(Application.dataPath, "country.db");
+                            if(!File.Exists(filePath)) UnpackDatabase(filePath);
+                            return filePath;
         #elif UNITY_ANDROID
                 string filePath = Path.Combine(Application.persistentDataPath, "country.db");
-                        if (!File.Exists(filePath)) UnpackDatabase(filePath);
-                        return filePath;
+                                if (!File.Exists(filePath)) UnpackDatabase(filePath);
+                                return filePath;
         #endif
     }
 
@@ -145,7 +145,7 @@ public class SelectCountry : MonoBehaviour
             Debug.Log(age.text);
             userState.age = age.text;
             string potion = JsonUtility.ToJson(userState);
-            System.IO.File.WriteAllText(Application.dataPath + "/DataBases/data.json", potion);
+            System.IO.File.WriteAllText(getPath() + "/DataBases/data.json", potion);
         }
     }
 
@@ -155,6 +155,19 @@ public class SelectCountry : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         else
             log.enabled = true;
+    }
+
+    private static string getPath()
+    {
+        #if UNITY_EDITOR
+                return Application.dataPath;
+        #elif UNITY_ANDROID
+					        return Application.persistentDataPath;
+        #elif UNITY_IPHONE
+					        return GetiPhoneDocumentsPath();
+        #else
+					        return Application.dataPath;
+        #endif
     }
 
     [System.Serializable]

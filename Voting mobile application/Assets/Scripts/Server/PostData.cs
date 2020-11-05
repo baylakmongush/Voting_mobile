@@ -20,7 +20,7 @@ public class PostData : MonoBehaviour
 
 	IEnumerator SetRequest(string uri)
 	{
-		string json = File.ReadAllText(Application.dataPath + "/DataBases/data.json");
+		string json = File.ReadAllText(getPath() + "/DataBases/data.json");
 		var request = new UnityWebRequest(uri, "POST");
 		byte[] bodyRaw = Encoding.UTF8.GetBytes(json);
 		request.uploadHandler = (UploadHandler)new UploadHandlerRaw(bodyRaw);
@@ -37,5 +37,18 @@ public class PostData : MonoBehaviour
 			Debug.Log("All OK");
 			Debug.Log("Status Code: " + request.responseCode);
 		}
+	}
+
+	private static string getPath()
+	{
+		#if UNITY_EDITOR
+				return Application.dataPath;
+		#elif UNITY_ANDROID
+					return Application.persistentDataPath;
+		#elif UNITY_IPHONE
+					return GetiPhoneDocumentsPath();
+		#else
+					return Application.dataPath;
+		#endif
 	}
 }

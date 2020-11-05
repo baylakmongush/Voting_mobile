@@ -906,4 +906,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/PC.unity
   - Assets/Scenes/Voting.unity
   - Assets/Scenes/Statisticss.unity
-  playerPath: D:/Projects/game/Voting_mobile/AndroidAPKVote/voting.apk
+  playerPath: D:/Projects/tests/vote2.apk

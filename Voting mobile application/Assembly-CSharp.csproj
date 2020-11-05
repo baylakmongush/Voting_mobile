@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scenes\TestLocationService.cs" />
     <Compile Include="Assets\Scripts\Button1Value.cs" />
     <Compile Include="Assets\Scripts\Button2Value.cs" />
     <Compile Include="Assets\Scripts\ButtonMovement.cs" />

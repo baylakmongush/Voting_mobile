@@ -6680,8 +6680,8 @@ IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m507C9149FF7F
 // System.Void System.Collections.Generic.List`1<System.Object>::RemoveRange(System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_RemoveRange_m89425146ABCF46BE030B6C4B3C85A8559550F983_gshared (List_1_t05CC3C859AB5E6024394EF9A42E3E696628CA02D * __this, int32_t ___index0, int32_t ___count1, const RuntimeMethod* method);
 
-// System.String UnityEngine.Application::get_dataPath()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Application_get_dataPath_m33D721D71C0687F0013C8953FDB0807B7B3F2A01 (const RuntimeMethod* method);
+// System.String UnityEngine.Application::get_persistentDataPath()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Application_get_persistentDataPath_m82E34156D8BD0A55CAC258CDFE8317FAD6945F5B (const RuntimeMethod* method);
 // System.String System.String::Concat(System.String,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_mB78D0094592718DA6D5DB6C712A9C225631666BE (String_t* ___str00, String_t* ___str11, const RuntimeMethod* method);
 // System.String System.IO.File::ReadAllText(System.String)
@@ -6821,6 +6821,8 @@ inline Sprite_tCA09498D612D08DE668653AF1E9C12BF53434198 * Enumerable_First_TisSp
 }
 // System.Void UnityEngine.UI.Image::set_sprite(UnityEngine.Sprite)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Image_set_sprite_m77F8D681D4EE6D58F4F235AFF704C3EB165A9646 (Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E * __this, Sprite_tCA09498D612D08DE668653AF1E9C12BF53434198 * ___value0, const RuntimeMethod* method);
+// System.String UnityEngine.Application::get_dataPath()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Application_get_dataPath_m33D721D71C0687F0013C8953FDB0807B7B3F2A01 (const RuntimeMethod* method);
 // !!0 UnityEngine.JsonUtility::FromJson<LoadVPersCab/UserState>(System.String)
 inline UserState_tC10C074B2B237EA6806D419493FE93F8FBC0D097 * JsonUtility_FromJson_TisUserState_tC10C074B2B237EA6806D419493FE93F8FBC0D097_m6D640E4D442CB7CB1EC0C70012FB523C36957C70 (String_t* ___json0, const RuntimeMethod* method)
 {
@@ -6865,8 +6867,6 @@ inline SaveData_t47B2D1C6F54277F9BF8531E896EB576622093716 * JsonUtility_FromJson
 }
 // System.Void Request/<GetRequest>d__4::System.IDisposable.Dispose()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CGetRequestU3Ed__4_System_IDisposable_Dispose_m357A6610BD8BB12BA9CA15A7BD3EB036C77A6C7B (U3CGetRequestU3Ed__4_t0D1ABA56B639658AAD5B41F61E36447C200B58B9 * __this, const RuntimeMethod* method);
-// System.String UnityEngine.Application::get_persistentDataPath()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Application_get_persistentDataPath_m82E34156D8BD0A55CAC258CDFE8317FAD6945F5B (const RuntimeMethod* method);
 // System.String System.IO.Path::Combine(System.String,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Path_Combine_mA495A18104786EB450EC0E44EE0FB7F9040C4311 (String_t* ___path10, String_t* ___path21, const RuntimeMethod* method);
 // System.Boolean System.IO.File::Exists(System.String)
@@ -6980,8 +6980,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Button1Value_Click_m98C9331C36B0EA56843B
 	Scene_t942E023788C2BC9FBB7EC8356B4FB0088B2CFED2  V_3;
 	memset((&V_3), 0, sizeof(V_3));
 	{
-		// string json = File.ReadAllText(Application.dataPath + "/DataBases/data.json");
-		String_t* L_0 = Application_get_dataPath_m33D721D71C0687F0013C8953FDB0807B7B3F2A01(/*hidden argument*/NULL);
+		// string json = File.ReadAllText(Application.persistentDataPath + "/DataBases/data.json");
+		String_t* L_0 = Application_get_persistentDataPath_m82E34156D8BD0A55CAC258CDFE8317FAD6945F5B(/*hidden argument*/NULL);
 		String_t* L_1 = String_Concat_mB78D0094592718DA6D5DB6C712A9C225631666BE(L_0, _stringLiteral1906F30466631F66AD6952A3F1C772EB1EF2BD65, /*hidden argument*/NULL);
 		String_t* L_2 = File_ReadAllText_m404A1BE4C87AC3C7B9C0B07469CDC44DE52817FF(L_1, /*hidden argument*/NULL);
 		V_0 = L_2;
@@ -7007,8 +7007,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Button1Value_Click_m98C9331C36B0EA56843B
 		Users_tD51DA2F714DCDF58E7F65716070C2AB371C663A1 * L_11 = V_1;
 		String_t* L_12 = JsonUtility_ToJson_m588D3BCFA6FC7FA342FC221D4CB02729E901E573(L_11, /*hidden argument*/NULL);
 		V_2 = L_12;
-		// System.IO.File.WriteAllText(Application.dataPath + "/DataBases/data.json", newjson);
-		String_t* L_13 = Application_get_dataPath_m33D721D71C0687F0013C8953FDB0807B7B3F2A01(/*hidden argument*/NULL);
+		// System.IO.File.WriteAllText(Application.persistentDataPath + "/DataBases/data.json", newjson);
+		String_t* L_13 = Application_get_persistentDataPath_m82E34156D8BD0A55CAC258CDFE8317FAD6945F5B(/*hidden argument*/NULL);
 		String_t* L_14 = String_Concat_mB78D0094592718DA6D5DB6C712A9C225631666BE(L_13, _stringLiteral1906F30466631F66AD6952A3F1C772EB1EF2BD65, /*hidden argument*/NULL);
 		String_t* L_15 = V_2;
 		File_WriteAllText_m7BA355E5631C6A3E3D3378D6101EF65E72A45F0A(L_14, L_15, /*hidden argument*/NULL);
@@ -7068,8 +7068,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Button2Value_Click_m4FECFCAF98C99A9F58FD
 	Scene_t942E023788C2BC9FBB7EC8356B4FB0088B2CFED2  V_3;
 	memset((&V_3), 0, sizeof(V_3));
 	{
-		// string json = File.ReadAllText(Application.dataPath + "/DataBases/data.json");
-		String_t* L_0 = Application_get_dataPath_m33D721D71C0687F0013C8953FDB0807B7B3F2A01(/*hidden argument*/NULL);
+		// string json = File.ReadAllText(Application.persistentDataPath + "/DataBases/data.json");
+		String_t* L_0 = Application_get_persistentDataPath_m82E34156D8BD0A55CAC258CDFE8317FAD6945F5B(/*hidden argument*/NULL);
 		String_t* L_1 = String_Concat_mB78D0094592718DA6D5DB6C712A9C225631666BE(L_0, _stringLiteral1906F30466631F66AD6952A3F1C772EB1EF2BD65, /*hidden argument*/NULL);
 		String_t* L_2 = File_ReadAllText_m404A1BE4C87AC3C7B9C0B07469CDC44DE52817FF(L_1, /*hidden argument*/NULL);
 		V_0 = L_2;
@@ -7095,8 +7095,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Button2Value_Click_m4FECFCAF98C99A9F58FD
 		Users_t2EF35CE6EF2BF3231B227770D712B2ECDC6FE854 * L_11 = V_1;
 		String_t* L_12 = JsonUtility_ToJson_m588D3BCFA6FC7FA342FC221D4CB02729E901E573(L_11, /*hidden argument*/NULL);
 		V_2 = L_12;
-		// System.IO.File.WriteAllText(Application.dataPath + "/DataBases/data.json", newjson);
-		String_t* L_13 = Application_get_dataPath_m33D721D71C0687F0013C8953FDB0807B7B3F2A01(/*hidden argument*/NULL);
+		// System.IO.File.WriteAllText(Application.persistentDataPath + "/DataBases/data.json", newjson);
+		String_t* L_13 = Application_get_persistentDataPath_m82E34156D8BD0A55CAC258CDFE8317FAD6945F5B(/*hidden argument*/NULL);
 		String_t* L_14 = String_Concat_mB78D0094592718DA6D5DB6C712A9C225631666BE(L_13, _stringLiteral1906F30466631F66AD6952A3F1C772EB1EF2BD65, /*hidden argument*/NULL);
 		String_t* L_15 = V_2;
 		File_WriteAllText_m7BA355E5631C6A3E3D3378D6101EF65E72A45F0A(L_14, L_15, /*hidden argument*/NULL);
@@ -8820,8 +8820,8 @@ IL_0019:
 IL_001b:
 	{
 		__this->set_U3CU3E1__state_0((-1));
-		// string json = File.ReadAllText(Application.dataPath + "/DataBases/data.json");
-		String_t* L_3 = Application_get_dataPath_m33D721D71C0687F0013C8953FDB0807B7B3F2A01(/*hidden argument*/NULL);
+		// string json = File.ReadAllText(Application.persistentDataPath + "/DataBases/data.json");
+		String_t* L_3 = Application_get_persistentDataPath_m82E34156D8BD0A55CAC258CDFE8317FAD6945F5B(/*hidden argument*/NULL);
 		String_t* L_4 = String_Concat_mB78D0094592718DA6D5DB6C712A9C225631666BE(L_3, _stringLiteral1906F30466631F66AD6952A3F1C772EB1EF2BD65, /*hidden argument*/NULL);
 		String_t* L_5 = File_ReadAllText_m404A1BE4C87AC3C7B9C0B07469CDC44DE52817FF(L_4, /*hidden argument*/NULL);
 		__this->set_U3CjsonU3E5__1_4(L_5);
@@ -10281,8 +10281,8 @@ IL_0030:
 		UserState_t9778F7BDB40AFBF28CE33A364493E41100922EFB * L_12 = __this->get_userState_9();
 		String_t* L_13 = JsonUtility_ToJson_m588D3BCFA6FC7FA342FC221D4CB02729E901E573(L_12, /*hidden argument*/NULL);
 		V_1 = L_13;
-		// System.IO.File.WriteAllText(Application.dataPath + "/DataBases/data.json", potion);
-		String_t* L_14 = Application_get_dataPath_m33D721D71C0687F0013C8953FDB0807B7B3F2A01(/*hidden argument*/NULL);
+		// System.IO.File.WriteAllText(Application.persistentDataPath + "/DataBases/data.json", potion);
+		String_t* L_14 = Application_get_persistentDataPath_m82E34156D8BD0A55CAC258CDFE8317FAD6945F5B(/*hidden argument*/NULL);
 		String_t* L_15 = String_Concat_mB78D0094592718DA6D5DB6C712A9C225631666BE(L_14, _stringLiteral1906F30466631F66AD6952A3F1C772EB1EF2BD65, /*hidden argument*/NULL);
 		String_t* L_16 = V_1;
 		File_WriteAllText_m7BA355E5631C6A3E3D3378D6101EF65E72A45F0A(L_15, L_16, /*hidden argument*/NULL);
