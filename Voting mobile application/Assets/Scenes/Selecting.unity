@@ -217,9 +217,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1df8898c7e364b8458bab5af239eaae9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cityName: {fileID: 0}
-  countryName: {fileID: 0}
-  countryID: {fileID: 0}
+  cityName: {fileID: 2131072000}
+  countryName: {fileID: 517684914}
+  countryID: {fileID: 70518544}
 --- !u!1 &70518542
 GameObject:
   m_ObjectHideFlags: 0
