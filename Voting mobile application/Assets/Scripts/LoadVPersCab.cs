@@ -29,9 +29,20 @@ public class LoadVPersCab : MonoBehaviour
 
     public void FromJson()
     {
-        string path = Application.dataPath + "/DataBases/data.json";
+        string path = getPath() + "/DataBases/data.json";
         string json = File.ReadAllText(path);
         userState = JsonUtility.FromJson<UserState>(json);
+    }
+
+    private static string getPath()
+    {
+#if UNITY_ANDROID && !UNITY_EDITOR
+		        return Application.persistentDataPath;
+#elif UNITY_IPHONE && !UNITY_EDITOR
+		        return GetiPhoneDocumentsPath();
+#else
+        return Application.dataPath;
+#endif
     }
 
     [System.Serializable]

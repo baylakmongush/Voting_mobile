@@ -10,28 +10,23 @@ public class Button1Value : MonoBehaviour
     public Text content;
     public void Click()
     {
-        if (content != null)
-        {
-            string json = File.ReadAllText(getPath() + "/DataBases/data.json");
-            Users potion = JsonUtility.FromJson<Users>(json);
-            Debug.Log(potion.age + " = age");
-            potion.vote = content.text;
-            string newjson = JsonUtility.ToJson(potion);
-            System.IO.File.WriteAllText(getPath() + "/DataBases/data.json", newjson);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
+        string json = File.ReadAllText(getPath() + "/DataBases/data.json");
+        Users potion = JsonUtility.FromJson<Users>(json);
+        Debug.Log(potion.age + " = age");
+        potion.vote = content.text;
+        string newjson = JsonUtility.ToJson(potion);
+        System.IO.File.WriteAllText(getPath() + "/DataBases/data.json", newjson);
+        SceneManager.LoadScene("Statistics");
     }
 
     private static string getPath()
     {
-        #if UNITY_EDITOR
-                return Application.dataPath;
-        #elif UNITY_ANDROID
-                    return Application.persistentDataPath;
-        #elif UNITY_IPHONE
-                    return GetiPhoneDocumentsPath();
+        #if UNITY_ANDROID && !UNITY_EDITOR
+		                return Application.persistentDataPath;
+        #elif UNITY_IPHONE && !UNITY_EDITOR
+		                return GetiPhoneDocumentsPath();
         #else
-                    return Application.dataPath;
+                return Application.dataPath;
         #endif
     }
 

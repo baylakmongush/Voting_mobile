@@ -21,6 +21,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Voting.unity
     guid: c0b557e5aa0961d418dd528f11ee7e05
   - enabled: 1
-    path: Assets/Scenes/Statisticss.unity
+    path: Assets/Scenes/Statistics.unity
     guid: 2376e23d760099f44bde0cd79e33e07b
   m_configObjects: {}

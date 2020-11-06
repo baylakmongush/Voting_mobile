@@ -41,14 +41,12 @@ public class PostData : MonoBehaviour
 
 	private static string getPath()
 	{
-		#if UNITY_EDITOR
-				return Application.dataPath;
-		#elif UNITY_ANDROID
-					return Application.persistentDataPath;
-		#elif UNITY_IPHONE
-					return GetiPhoneDocumentsPath();
-		#else
-					return Application.dataPath;
-		#endif
+#if UNITY_ANDROID && !UNITY_EDITOR
+		        return Application.persistentDataPath;
+#elif UNITY_IPHONE && !UNITY_EDITOR
+		        return GetiPhoneDocumentsPath();
+#else
+		return Application.dataPath;
+#endif
 	}
 }

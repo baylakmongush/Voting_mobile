@@ -14,6 +14,7 @@ ScriptsOnlyBuild:
     - PrevScene
     - Request
     - SelectCountry
+    - TestLocationService
     - url
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
@@ -85,11 +86,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13728}
     - Class: 114
-      Script: {instanceID: 13970}
+      Script: {instanceID: 13972}
     - Class: 114
-      Script: {instanceID: 14264}
+      Script: {instanceID: 14266}
     - Class: 114
-      Script: {instanceID: 14328}
+      Script: {instanceID: 14330}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -175,9 +176,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13770}
     - Class: 114
-      Script: {instanceID: 14264}
+      Script: {instanceID: 14266}
     - Class: 114
-      Script: {instanceID: 14328}
+      Script: {instanceID: 14330}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -236,13 +237,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13728}
     - Class: 114
-      Script: {instanceID: 14264}
+      Script: {instanceID: 13786}
     - Class: 114
-      Script: {instanceID: 14296}
+      Script: {instanceID: 14266}
     - Class: 114
-      Script: {instanceID: 14328}
+      Script: {instanceID: 14298}
     - Class: 114
-      Script: {instanceID: 14348}
+      Script: {instanceID: 14330}
+    - Class: 114
+      Script: {instanceID: 14350}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -261,7 +264,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Scenes/Statisticss.unity:
+    Assets/Scenes/Statistics.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -311,11 +314,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13770}
     - Class: 114
-      Script: {instanceID: 14264}
+      Script: {instanceID: 14266}
     - Class: 114
-      Script: {instanceID: 14328}
+      Script: {instanceID: 14330}
     - Class: 114
-      Script: {instanceID: 14366}
+      Script: {instanceID: 14368}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -384,9 +387,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13770}
     - Class: 114
-      Script: {instanceID: 14264}
+      Script: {instanceID: 14266}
     - Class: 114
-      Script: {instanceID: 14328}
+      Script: {instanceID: 14330}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -780,7 +783,7 @@ ScriptsOnlyBuild:
     className: AudioTrack
   - hash:
       serializedVersion: 2
-      Hash: 9531f0702723de61187434665d432213
+      Hash: b6830723a6443c9387a1c7253a8907bc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SelectCountry
@@ -802,6 +805,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnableSettings
+  - hash:
+      serializedVersion: 2
+      Hash: d4c39ed6dea84be78ad27eb8a6b4e2bf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TestLocationService
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -905,5 +914,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Selecting.unity
   - Assets/Scenes/PC.unity
   - Assets/Scenes/Voting.unity
-  - Assets/Scenes/Statisticss.unity
-  playerPath: D:/Projects/tests/vote2.apk
+  - Assets/Scenes/Statistics.unity
+  playerPath: D:/Projects/tests/new.apk
