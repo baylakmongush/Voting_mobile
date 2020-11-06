@@ -14,6 +14,7 @@ public class SelectCountry : MonoBehaviour
     public Dropdown selectCity;
     public Text cityName;
     public Text countryName;
+    public Text countryID;
     public Text age;
     private UserState userState;
     private string[] textValue;
@@ -53,7 +54,7 @@ public class SelectCountry : MonoBehaviour
 
     void Start()
     {
-        DBPath = GetDatabasePath();
+       /*DBPath = GetDatabasePath();
         string connectionString = "URI=file:" + DBPath;
         using (IDbConnection dbcon = (IDbConnection)new SqliteConnection(connectionString))
         {
@@ -71,7 +72,7 @@ public class SelectCountry : MonoBehaviour
                 }
             }
             dbcon.Close();
-        }
+        }*/
         namesOfCity = new List<string>();
         json = new List<string>();
     }
@@ -143,7 +144,13 @@ public class SelectCountry : MonoBehaviour
         if (countryName.text != "Select country" && cityName.text != "Select city")
         {
             Debug.Log(age.text);
-            userState.age = age.text;
+            userState = new UserState()
+            {
+                id = countryID.text,
+                country = countryName.text,
+                city = cityName.text,
+                age  = age.text
+            };
             string potion = JsonUtility.ToJson(userState);
             System.IO.File.WriteAllText(getPath() + "/DataBases/data.json", potion);
         }

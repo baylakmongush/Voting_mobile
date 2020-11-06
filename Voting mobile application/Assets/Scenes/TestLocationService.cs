@@ -1,10 +1,14 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.Networking;
 
 public class TestLocationService : MonoBehaviour
 {
+    public Text cityName;
+    public Text countryName;
+    public Text countryID;
     private void Start()
     {
         StartCoroutine("DetectCountry");
@@ -25,9 +29,9 @@ public class TestLocationService : MonoBehaviour
             if (request.isDone)
             {
                 Country res = JsonUtility.FromJson<Country>(request.downloadHandler.text);
-                Debug.Log(res.country);
-                Debug.Log(res.countryCode);
-                Debug.Log(res.city);
+                countryName.text = res.country;
+                countryID.text = res.countryCode;
+                cityName.text =  res.city;
             }
         }
     }
