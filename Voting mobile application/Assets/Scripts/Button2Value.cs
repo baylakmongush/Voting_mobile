@@ -10,12 +10,12 @@ public class Button2Value : MonoBehaviour
     public Text content;
     public void Click()
     {
-        string json = File.ReadAllText(getPath() + "/DataBases/data.json");
+        string json = File.ReadAllText(Path.Combine(getPath(), "data.json"));
         Users potion = JsonUtility.FromJson<Users>(json);
         Debug.Log(potion.age + " = age");
         potion.vote = content.text;
         string newjson = JsonUtility.ToJson(potion);
-        System.IO.File.WriteAllText(getPath() + "/DataBases/data.json", newjson);
+        System.IO.File.WriteAllText(Path.Combine(getPath(), "data.json"), newjson);
         SceneManager.LoadScene("Statistics");
     }
 

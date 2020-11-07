@@ -29,7 +29,7 @@ public class LoadVPersCab : MonoBehaviour
 
     public void FromJson()
     {
-        string path = getPath() + "/DataBases/data.json";
+        string path = Path.Combine(getPath(), "data.json");
         string json = File.ReadAllText(path);
         userState = JsonUtility.FromJson<UserState>(json);
     }

@@ -20,7 +20,7 @@ public class PostData : MonoBehaviour
 
 	IEnumerator SetRequest(string uri)
 	{
-		string json = File.ReadAllText(getPath() + "/DataBases/data.json");
+		string json = File.ReadAllText(Path.Combine(getPath(), "data.json"));
 		var request = new UnityWebRequest(uri, "POST");
 		byte[] bodyRaw = Encoding.UTF8.GetBytes(json);
 		request.uploadHandler = (UploadHandler)new UploadHandlerRaw(bodyRaw);

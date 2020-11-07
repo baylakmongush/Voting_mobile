@@ -1,0 +1,519 @@
+﻿#include "il2cpp-config.h"
+
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+IL2CPP_EXTERN_C_BEGIN
+IL2CPP_EXTERN_C_END
+
+
+
+
+// 0x00000001 System.String BetterStreamingAssets::get_Root()
+extern void BetterStreamingAssets_get_Root_mE1B339B0EB9E1AA72513A26E0AC5381837929402 (void);
+// 0x00000002 System.Void BetterStreamingAssets::Initialize()
+extern void BetterStreamingAssets_Initialize_m04F4A2DCB250BE68D2949599CB7DC18D7D652103 (void);
+// 0x00000003 System.Boolean BetterStreamingAssets::FileExists(System.String)
+extern void BetterStreamingAssets_FileExists_mDD99E2438FD0CAF434A34F6A6CF4D50942FCB36D (void);
+// 0x00000004 System.Boolean BetterStreamingAssets::DirectoryExists(System.String)
+extern void BetterStreamingAssets_DirectoryExists_m00266C90B17DFF6BE94753F2743B9B19E5454AB1 (void);
+// 0x00000005 UnityEngine.AssetBundleCreateRequest BetterStreamingAssets::LoadAssetBundleAsync(System.String,System.UInt32)
+extern void BetterStreamingAssets_LoadAssetBundleAsync_mC684781E322A029EED75E10DF342B15BAD368C43 (void);
+// 0x00000006 UnityEngine.AssetBundle BetterStreamingAssets::LoadAssetBundle(System.String,System.UInt32)
+extern void BetterStreamingAssets_LoadAssetBundle_m635CCC0E77C7A4B2CD0369FA4C9547013D50DE6A (void);
+// 0x00000007 System.IO.Stream BetterStreamingAssets::OpenRead(System.String)
+extern void BetterStreamingAssets_OpenRead_mED2685FF7CBF44308FBF98F40D89DD93E0F39167 (void);
+// 0x00000008 System.IO.StreamReader BetterStreamingAssets::OpenText(System.String)
+extern void BetterStreamingAssets_OpenText_m5C1218FF7A88C0E734DE7E8FCF15A171B902AE85 (void);
+// 0x00000009 System.String BetterStreamingAssets::ReadAllText(System.String)
+extern void BetterStreamingAssets_ReadAllText_m32749DD115876D378CE51B973C868B4328EE6B7E (void);
+// 0x0000000A System.String[] BetterStreamingAssets::ReadAllLines(System.String)
+extern void BetterStreamingAssets_ReadAllLines_m42075D3AEB7FECA17E35CD7575AD65572186BB20 (void);
+// 0x0000000B System.Byte[] BetterStreamingAssets::ReadAllBytes(System.String)
+extern void BetterStreamingAssets_ReadAllBytes_mE5361CA0667FA1A51CDE6789866ED25AF607993C (void);
+// 0x0000000C System.String[] BetterStreamingAssets::GetFiles(System.String,System.String,System.IO.SearchOption)
+extern void BetterStreamingAssets_GetFiles_m921E0DAADD9BA4A50CEB9B05DFBB8CF5FB101F9F (void);
+// 0x0000000D System.String[] BetterStreamingAssets::GetFiles(System.String)
+extern void BetterStreamingAssets_GetFiles_m99EDEEAF484462FB2CDE8FE883818B000597F26F (void);
+// 0x0000000E System.String[] BetterStreamingAssets::GetFiles(System.String,System.String)
+extern void BetterStreamingAssets_GetFiles_m4FF51BE451E56C673579C3B80C95A50DCADCFBD4 (void);
+// 0x0000000F BetterStreamingAssets_ReadInfo BetterStreamingAssets::GetInfoOrThrow(System.String)
+extern void BetterStreamingAssets_GetInfoOrThrow_mC8B40A9547965B5A077BC6B0967035AA8887AB28 (void);
+// 0x00000010 System.Void BetterStreamingAssets::ThrowFileNotFound(System.String)
+extern void BetterStreamingAssets_ThrowFileNotFound_mAA1D1AC36515A2228258D9CD741A97F1E9EEAECC (void);
+// 0x00000011 System.Boolean Better.StreamingAssets.PathUtil::IsDirectorySeparator(System.Char)
+extern void PathUtil_IsDirectorySeparator_mC533AD50463A4840555728D68C6D260534C088E2 (void);
+// 0x00000012 System.String Better.StreamingAssets.PathUtil::FixTrailingDirectorySeparators(System.String)
+extern void PathUtil_FixTrailingDirectorySeparators_m85B7E697762C4C1EC410DDA817E1040D6530AF64 (void);
+// 0x00000013 System.String Better.StreamingAssets.PathUtil::CombineSlash(System.String,System.String)
+extern void PathUtil_CombineSlash_m624B03E180D3287A057AF20DCE240048AA6619B3 (void);
+// 0x00000014 System.String Better.StreamingAssets.PathUtil::NormalizeRelativePath(System.String,System.Boolean)
+extern void PathUtil_NormalizeRelativePath_m3EEF2F2C57DD551059FADA52710D209C0CB52DA4 (void);
+// 0x00000015 System.Boolean Better.StreamingAssets.PathUtil::IsValidCharacter(System.Char)
+extern void PathUtil_IsValidCharacter_m16A2BD560960E553352967EBF8226A6BE49FD465 (void);
+// 0x00000016 System.Text.RegularExpressions.Regex Better.StreamingAssets.PathUtil::WildcardToRegex(System.String)
+extern void PathUtil_WildcardToRegex_m475DB15BFD88EE4E1494E9BA42D0BCAC63523BEF (void);
+// 0x00000017 System.Void Better.StreamingAssets.SubReadOnlyStream::.ctor(System.IO.Stream,System.Boolean)
+extern void SubReadOnlyStream__ctor_m2E182D4DBD0B779E2840F3B5CDB53C6AD225C05E (void);
+// 0x00000018 System.Void Better.StreamingAssets.SubReadOnlyStream::.ctor(System.IO.Stream,System.Int64,System.Int64,System.Boolean)
+extern void SubReadOnlyStream__ctor_m824658E28BC6037A1E989A4B56D03C9CDC4C515B (void);
+// 0x00000019 System.Int64 Better.StreamingAssets.SubReadOnlyStream::get_Length()
+extern void SubReadOnlyStream_get_Length_m3BF8A9CC6A0D13EF5628A52AD5297FAE9552EBDA (void);
+// 0x0000001A System.Int64 Better.StreamingAssets.SubReadOnlyStream::get_Position()
+extern void SubReadOnlyStream_get_Position_m5568D774F47D11284C46986E55185EF77D231979 (void);
+// 0x0000001B System.Void Better.StreamingAssets.SubReadOnlyStream::set_Position(System.Int64)
+extern void SubReadOnlyStream_set_Position_m5C3237B49412E55D81F00A4438AF40FA9DB7AFC3 (void);
+// 0x0000001C System.Boolean Better.StreamingAssets.SubReadOnlyStream::get_CanRead()
+extern void SubReadOnlyStream_get_CanRead_m69DA489875D02BBBB8AF15130989191AAF8DFBD9 (void);
+// 0x0000001D System.Boolean Better.StreamingAssets.SubReadOnlyStream::get_CanSeek()
+extern void SubReadOnlyStream_get_CanSeek_m9FE543790ED5F1F1608198045BEA0B1874388809 (void);
+// 0x0000001E System.Boolean Better.StreamingAssets.SubReadOnlyStream::get_CanWrite()
+extern void SubReadOnlyStream_get_CanWrite_m70F8C501BF384ECCA62864738F3CE79B9F300091 (void);
+// 0x0000001F System.Int32 Better.StreamingAssets.SubReadOnlyStream::Read(System.Byte[],System.Int32,System.Int32)
+extern void SubReadOnlyStream_Read_m30BEA529E449D97232722DD985479B7B28BCC709 (void);
+// 0x00000020 System.Int64 Better.StreamingAssets.SubReadOnlyStream::Seek(System.Int64,System.IO.SeekOrigin)
+extern void SubReadOnlyStream_Seek_mEFD0A91D3BB28903F455A5F31F2AA3C15033BBEC (void);
+// 0x00000021 System.Void Better.StreamingAssets.SubReadOnlyStream::SetLength(System.Int64)
+extern void SubReadOnlyStream_SetLength_m00593189D0A7EE99772DA3FD2D29D9B4B471201C (void);
+// 0x00000022 System.Void Better.StreamingAssets.SubReadOnlyStream::Write(System.Byte[],System.Int32,System.Int32)
+extern void SubReadOnlyStream_Write_m184123E07D908CBCFE727FD5F795F0035AB86EE6 (void);
+// 0x00000023 System.Void Better.StreamingAssets.SubReadOnlyStream::Flush()
+extern void SubReadOnlyStream_Flush_mBC2011695FF7A245B6A15D461A9346797A2F7C1C (void);
+// 0x00000024 System.Void Better.StreamingAssets.SubReadOnlyStream::Dispose(System.Boolean)
+extern void SubReadOnlyStream_Dispose_mF015F76B75950DEE8FE56996FD01660E4DA3DFB8 (void);
+// 0x00000025 System.Void Better.StreamingAssets.SubReadOnlyStream::ThrowIfDisposed()
+extern void SubReadOnlyStream_ThrowIfDisposed_mE82B3AAA2E199E1246262FB5CDC91B4D58181E6F (void);
+// 0x00000026 System.Void Better.StreamingAssets.SubReadOnlyStream::ThrowIfCantRead()
+extern void SubReadOnlyStream_ThrowIfCantRead_m0F3156FA5C403CB214085D8ED9A07BA90E3B760E (void);
+// 0x00000027 System.Void Better.StreamingAssets.BSA_TestSceneGUI::OnEnable()
+extern void BSA_TestSceneGUI_OnEnable_m0E8F8A5E86C9CA722EBD21D65AF54D64506FDAE6 (void);
+// 0x00000028 System.Void Better.StreamingAssets.BSA_TestSceneGUI::OnDisable()
+extern void BSA_TestSceneGUI_OnDisable_m32F8748EF7C59399DD1A7788CC5E1ADC628F43F1 (void);
+// 0x00000029 System.Void Better.StreamingAssets.BSA_TestSceneGUI::OnGUI()
+extern void BSA_TestSceneGUI_OnGUI_m06D59D7CEDDFD82C6A643367BB05DD84857BEBDF (void);
+// 0x0000002A System.String Better.StreamingAssets.BSA_TestSceneGUI::get_StreamingAssetsPath()
+extern void BSA_TestSceneGUI_get_StreamingAssetsPath_mA8FA02EC9E1A7B4D4146DB461E3898DC8C1435B6 (void);
+// 0x0000002B System.Void Better.StreamingAssets.BSA_TestSceneGUI::Initialize()
+extern void BSA_TestSceneGUI_Initialize_m8E73A5001D68D9E765C177DA9F213FD3FF6CED0D (void);
+// 0x0000002C System.Void Better.StreamingAssets.BSA_TestSceneGUI::DoTestTypeToggle(Better.StreamingAssets.BSA_TestSceneGUI_TestType)
+extern void BSA_TestSceneGUI_DoTestTypeToggle_m94CB13B21647D24E99216DA4E99356DC3ADF7B4B (void);
+// 0x0000002D System.Void Better.StreamingAssets.BSA_TestSceneGUI::DoReadModeToggle(Better.StreamingAssets.BSA_TestSceneGUI_ReadMode)
+extern void BSA_TestSceneGUI_DoReadModeToggle_mD9FB74773822E2108CAE71BE55B4186488CF0E7E (void);
+// 0x0000002E System.Collections.IEnumerator Better.StreamingAssets.BSA_TestSceneGUI::TestAllCoroutine(System.Collections.Generic.IEnumerable`1<System.String>,System.Int32,Better.StreamingAssets.BSA_TestSceneGUI_ReadMode,Better.StreamingAssets.BSA_TestSceneGUI_TestType,System.Collections.Generic.List`1<Better.StreamingAssets.BSA_TestSceneGUI_TestInfo>)
+extern void BSA_TestSceneGUI_TestAllCoroutine_mC8C1ED2BC7C199EA437D4B973E0DFD22320A133E (void);
+// 0x0000002F System.Void Better.StreamingAssets.BSA_TestSceneGUI::LogWorkProgress(System.String)
+extern void BSA_TestSceneGUI_LogWorkProgress_mFA79C567989C180D9D5445AB1A6A644ED8D2DB5B (void);
+// 0x00000030 System.Collections.IEnumerator Better.StreamingAssets.BSA_TestSceneGUI::ErrorCatchingCoroutine(System.Collections.IEnumerator,System.Action`1<System.Exception>)
+extern void BSA_TestSceneGUI_ErrorCatchingCoroutine_mD296EA0C3ECB81BBE21F4516F81856C2B1F3C975 (void);
+// 0x00000031 System.Collections.IEnumerator Better.StreamingAssets.BSA_TestSceneGUI::TestHarness(Better.StreamingAssets.BSA_TestSceneGUI_ReadMode,System.String,Better.StreamingAssets.BSA_TestSceneGUI_TestType,System.Int32,Better.StreamingAssets.BSA_TestSceneGUI_TestResultDelegate)
+extern void BSA_TestSceneGUI_TestHarness_mF6E43DCCBB679EAD7B4A2B6246D0B6CE13E65DD3 (void);
+// 0x00000032 System.Void Better.StreamingAssets.BSA_TestSceneGUI::.ctor()
+extern void BSA_TestSceneGUI__ctor_m8D55F54C97777FCB2BBC47CE99AFE997315E4CC6 (void);
+// 0x00000033 System.UInt16 Better.StreamingAssets.ZipArchive.ZipGenericExtraField::get_Tag()
+extern void ZipGenericExtraField_get_Tag_mE1447378284194E19B2820271E76A076884479BB_AdjustorThunk (void);
+// 0x00000034 System.UInt16 Better.StreamingAssets.ZipArchive.ZipGenericExtraField::get_Size()
+extern void ZipGenericExtraField_get_Size_mACA634AD0BD92C08B2E0F4D268704BE3754386A1_AdjustorThunk (void);
+// 0x00000035 System.Byte[] Better.StreamingAssets.ZipArchive.ZipGenericExtraField::get_Data()
+extern void ZipGenericExtraField_get_Data_mE709A336E46D908F8775C545DFBF76E0B528881B_AdjustorThunk (void);
+// 0x00000036 System.Boolean Better.StreamingAssets.ZipArchive.ZipGenericExtraField::TryReadBlock(System.IO.BinaryReader,System.Int64,Better.StreamingAssets.ZipArchive.ZipGenericExtraField&)
+extern void ZipGenericExtraField_TryReadBlock_mB4FF1FB0CBB0B8F3D5F384D783E31E475F86AAB3 (void);
+// 0x00000037 System.Nullable`1<System.Int64> Better.StreamingAssets.ZipArchive.Zip64ExtraField::get_UncompressedSize()
+extern void Zip64ExtraField_get_UncompressedSize_m27725674A60CDD339E16741A5B9A1C34AF6CBAB0_AdjustorThunk (void);
+// 0x00000038 System.Void Better.StreamingAssets.ZipArchive.Zip64ExtraField::set_UncompressedSize(System.Nullable`1<System.Int64>)
+extern void Zip64ExtraField_set_UncompressedSize_m37E4440B96AE49C5A886869EE1B9183594100C07_AdjustorThunk (void);
+// 0x00000039 System.Nullable`1<System.Int64> Better.StreamingAssets.ZipArchive.Zip64ExtraField::get_CompressedSize()
+extern void Zip64ExtraField_get_CompressedSize_m56DA9D6A72E3439BD418AD2BD115FF7E512E319C_AdjustorThunk (void);
+// 0x0000003A System.Void Better.StreamingAssets.ZipArchive.Zip64ExtraField::set_CompressedSize(System.Nullable`1<System.Int64>)
+extern void Zip64ExtraField_set_CompressedSize_m48D75BDB894F098D7955B13A62E309DD8E444417_AdjustorThunk (void);
+// 0x0000003B System.Nullable`1<System.Int64> Better.StreamingAssets.ZipArchive.Zip64ExtraField::get_LocalHeaderOffset()
+extern void Zip64ExtraField_get_LocalHeaderOffset_m3889B68FF7B34436823B7D600466546B7204CAA7_AdjustorThunk (void);
+// 0x0000003C System.Void Better.StreamingAssets.ZipArchive.Zip64ExtraField::set_LocalHeaderOffset(System.Nullable`1<System.Int64>)
+extern void Zip64ExtraField_set_LocalHeaderOffset_m63B83B7400B662A58E5C1F5397CD35D2EDE0E98E_AdjustorThunk (void);
+// 0x0000003D System.Nullable`1<System.Int32> Better.StreamingAssets.ZipArchive.Zip64ExtraField::get_StartDiskNumber()
+extern void Zip64ExtraField_get_StartDiskNumber_mB318D7B612F27FD5C24EE41BCEF6CCFA61FF02B4_AdjustorThunk (void);
+// 0x0000003E System.Void Better.StreamingAssets.ZipArchive.Zip64ExtraField::UpdateSize()
+extern void Zip64ExtraField_UpdateSize_m7F3953688E926BE0DAA19D29E6902EB9FC015C3B_AdjustorThunk (void);
+// 0x0000003F Better.StreamingAssets.ZipArchive.Zip64ExtraField Better.StreamingAssets.ZipArchive.Zip64ExtraField::GetJustZip64Block(System.IO.Stream,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+extern void Zip64ExtraField_GetJustZip64Block_m417F37E00E43F28C4FBEC206F46947CF07A71041 (void);
+// 0x00000040 System.Boolean Better.StreamingAssets.ZipArchive.Zip64ExtraField::TryGetZip64BlockFromGenericExtraField(Better.StreamingAssets.ZipArchive.ZipGenericExtraField,System.Boolean,System.Boolean,System.Boolean,System.Boolean,Better.StreamingAssets.ZipArchive.Zip64ExtraField&)
+extern void Zip64ExtraField_TryGetZip64BlockFromGenericExtraField_m41C808711891DBD05A5980E6328658895AEF2E38 (void);
+// 0x00000041 System.Boolean Better.StreamingAssets.ZipArchive.Zip64EndOfCentralDirectoryLocator::TryReadBlock(System.IO.BinaryReader,Better.StreamingAssets.ZipArchive.Zip64EndOfCentralDirectoryLocator&)
+extern void Zip64EndOfCentralDirectoryLocator_TryReadBlock_mF63B25D17825F6793D7B1F31CE2FC3458C4C4A2C (void);
+// 0x00000042 System.Boolean Better.StreamingAssets.ZipArchive.Zip64EndOfCentralDirectoryRecord::TryReadBlock(System.IO.BinaryReader,Better.StreamingAssets.ZipArchive.Zip64EndOfCentralDirectoryRecord&)
+extern void Zip64EndOfCentralDirectoryRecord_TryReadBlock_mC7D6EEB6599B3F198D14FFEB70E4D21FDD7AA6BD (void);
+// 0x00000043 System.Boolean Better.StreamingAssets.ZipArchive.ZipLocalFileHeader::TrySkipBlock(System.IO.BinaryReader)
+extern void ZipLocalFileHeader_TrySkipBlock_m24428E5E4166A84A34BD0806C1BFA58250186728 (void);
+// 0x00000044 System.Boolean Better.StreamingAssets.ZipArchive.ZipCentralDirectoryFileHeader::TryReadBlock(System.IO.BinaryReader,Better.StreamingAssets.ZipArchive.ZipCentralDirectoryFileHeader&)
+extern void ZipCentralDirectoryFileHeader_TryReadBlock_m9EE07A8908FB3E923B2F5F90A7D06F0F55351781 (void);
+// 0x00000045 System.Boolean Better.StreamingAssets.ZipArchive.ZipEndOfCentralDirectoryBlock::TryReadBlock(System.IO.BinaryReader,Better.StreamingAssets.ZipArchive.ZipEndOfCentralDirectoryBlock&)
+extern void ZipEndOfCentralDirectoryBlock_TryReadBlock_mF8B8C584A1BC2CE869E28A2025A83C1976A58A7F (void);
+// 0x00000046 System.Void Better.StreamingAssets.ZipArchive.ZipHelper::ReadBytes(System.IO.Stream,System.Byte[],System.Int32)
+extern void ZipHelper_ReadBytes_mAA2E1834857097160DDBCC7B70EBA2B35840C59A (void);
+// 0x00000047 System.Boolean Better.StreamingAssets.ZipArchive.ZipHelper::SeekBackwardsToSignature(System.IO.Stream,System.UInt32)
+extern void ZipHelper_SeekBackwardsToSignature_m82683FE7163F17FC4522F4384BC491C154077C9D (void);
+// 0x00000048 System.Void Better.StreamingAssets.ZipArchive.ZipHelper::AdvanceToPosition(System.IO.Stream,System.Int64)
+extern void ZipHelper_AdvanceToPosition_m658B0AA7C773A1550A8137206CE24B5377C91685 (void);
+// 0x00000049 System.Boolean Better.StreamingAssets.ZipArchive.ZipHelper::SeekBackwardsAndRead(System.IO.Stream,System.Byte[],System.Int32&)
+extern void ZipHelper_SeekBackwardsAndRead_m8B88CB9C7091279DE1AB71932D8A9581BB508AA5 (void);
+// 0x0000004A System.Void Better.StreamingAssets.ZipArchive.ZipArchiveException::.ctor(System.String)
+extern void ZipArchiveException__ctor_mBF77403E9666E8DB9913F82628A0618253EC054D (void);
+// 0x0000004B System.Void Better.StreamingAssets.ZipArchive.ZipArchiveException::.ctor(System.String,System.Exception)
+extern void ZipArchiveException__ctor_m14E76998849FBD303E213389BD94DFFC85E24BF5 (void);
+// 0x0000004C System.Void Better.StreamingAssets.ZipArchive.ZipArchiveUtils::ReadEndOfCentralDirectory(System.IO.Stream,System.IO.BinaryReader,System.Int64&,System.Int64&)
+extern void ZipArchiveUtils_ReadEndOfCentralDirectory_m5EEC63207802B6771CBBB2D4F6D06FB945B35BBE (void);
+// 0x0000004D System.Void BetterStreamingAssets_ApkImpl::Initialize(System.String,System.String)
+extern void ApkImpl_Initialize_m024C948123F4D400046870EDE5F5C5416DE15717 (void);
+// 0x0000004E System.Boolean BetterStreamingAssets_ApkImpl::TryGetInfo(System.String,BetterStreamingAssets_ReadInfo&)
+extern void ApkImpl_TryGetInfo_mD5BB2E535C92DAC89794B92ACE86BE170D7649BE (void);
+// 0x0000004F System.Boolean BetterStreamingAssets_ApkImpl::DirectoryExists(System.String)
+extern void ApkImpl_DirectoryExists_m257D9E8408AE4E310A20960F8FD6B715AE3F18B3 (void);
+// 0x00000050 System.String[] BetterStreamingAssets_ApkImpl::GetFiles(System.String,System.String,System.IO.SearchOption)
+extern void ApkImpl_GetFiles_m793AC66400F7026EDC0482657A8B82ECA2FD30F9 (void);
+// 0x00000051 System.Byte[] BetterStreamingAssets_ApkImpl::ReadAllBytes(System.String)
+extern void ApkImpl_ReadAllBytes_m071CC80C6953A72F9A2AC6A73C855DC86119A206 (void);
+// 0x00000052 System.IO.Stream BetterStreamingAssets_ApkImpl::OpenRead(System.String)
+extern void ApkImpl_OpenRead_m893E7D1CB0C8DC69BE1E4513AC870E2BA282C027 (void);
+// 0x00000053 System.Int32 BetterStreamingAssets_ApkImpl::GetDirectoryIndex(System.String)
+extern void ApkImpl_GetDirectoryIndex_mD8C233B5CE0B0A0F965265E47FC5EB1C867AC6DA (void);
+// 0x00000054 System.Void BetterStreamingAssets_ApkImpl::GetStreamingAssetsInfoFromJar(System.String,System.Collections.Generic.List`1<System.String>,System.Collections.Generic.List`1<BetterStreamingAssets_ApkImpl_PartInfo>)
+extern void ApkImpl_GetStreamingAssetsInfoFromJar_m5E5FDAFF107B3AD556460AF6B70AFE1144124BCF (void);
+// 0x00000055 System.Void Better.StreamingAssets.BSA_TestSceneGUI_CoroutineHost::.ctor()
+extern void CoroutineHost__ctor_m8C9DF8FAAEBFAC03D1BE7D9027CFFFC6EC96FA43 (void);
+// 0x00000056 System.Void Better.StreamingAssets.BSA_TestSceneGUI_TestInfo::.ctor()
+extern void TestInfo__ctor_m1F54948994C0CA4AD698CF66B4D20C6A336CEEAF (void);
+// 0x00000057 System.Void Better.StreamingAssets.BSA_TestSceneGUI_TestResultDelegate::.ctor(System.Object,System.IntPtr)
+extern void TestResultDelegate__ctor_m639D73102BD81C1543FFE2B24C53D5ECBED7C3E4 (void);
+// 0x00000058 System.Void Better.StreamingAssets.BSA_TestSceneGUI_TestResultDelegate::Invoke(System.TimeSpan,System.Int64,System.Int64,System.Int64,System.String[])
+extern void TestResultDelegate_Invoke_mCD4C9CC88C790ECD24E870DCE5B0903ADD467AB8 (void);
+// 0x00000059 System.IAsyncResult Better.StreamingAssets.BSA_TestSceneGUI_TestResultDelegate::BeginInvoke(System.TimeSpan,System.Int64,System.Int64,System.Int64,System.String[],System.AsyncCallback,System.Object)
+extern void TestResultDelegate_BeginInvoke_mF1DB3FA72740EE3426F4CC8B87DEB674FAFA0529 (void);
+// 0x0000005A System.Void Better.StreamingAssets.BSA_TestSceneGUI_TestResultDelegate::EndInvoke(System.IAsyncResult)
+extern void TestResultDelegate_EndInvoke_m8223969D4EC1B6BD9FAC3CB2D7A2C895ED19AD58 (void);
+// 0x0000005B System.Void Better.StreamingAssets.BSA_TestSceneGUI_<>c__DisplayClass26_0::.ctor()
+extern void U3CU3Ec__DisplayClass26_0__ctor_m985541E6288B3266DDA97FA3A806450426EB9B70 (void);
+// 0x0000005C System.Void Better.StreamingAssets.BSA_TestSceneGUI_<>c__DisplayClass26_0::<TestAllCoroutine>b__0(System.TimeSpan,System.Int64,System.Int64,System.Int64,System.String[])
+extern void U3CU3Ec__DisplayClass26_0_U3CTestAllCoroutineU3Eb__0_m8C1D63726B42B652282E14783887144CDE2BB60F (void);
+// 0x0000005D System.Void Better.StreamingAssets.BSA_TestSceneGUI_<>c__DisplayClass26_0::<TestAllCoroutine>b__1(System.Exception)
+extern void U3CU3Ec__DisplayClass26_0_U3CTestAllCoroutineU3Eb__1_m60877FF3F807A49CFB87A4A46F51112F84BEF3AA (void);
+// 0x0000005E System.Void Better.StreamingAssets.BSA_TestSceneGUI_<TestAllCoroutine>d__26::.ctor(System.Int32)
+extern void U3CTestAllCoroutineU3Ed__26__ctor_m3E9D7FEA94E862E2072DB2BA91F603CD9B689B73 (void);
+// 0x0000005F System.Void Better.StreamingAssets.BSA_TestSceneGUI_<TestAllCoroutine>d__26::System.IDisposable.Dispose()
+extern void U3CTestAllCoroutineU3Ed__26_System_IDisposable_Dispose_mE75A755944C3ABC52BBD6ACECD42FB84ED7B2753 (void);
+// 0x00000060 System.Boolean Better.StreamingAssets.BSA_TestSceneGUI_<TestAllCoroutine>d__26::MoveNext()
+extern void U3CTestAllCoroutineU3Ed__26_MoveNext_mF90DBEB0EA6FEF9E68F9D74DD61255E64FA1C895 (void);
+// 0x00000061 System.Void Better.StreamingAssets.BSA_TestSceneGUI_<TestAllCoroutine>d__26::<>m__Finally1()
+extern void U3CTestAllCoroutineU3Ed__26_U3CU3Em__Finally1_m2683099B05E208755B9BF5980F6FA69DEDDBB865 (void);
+// 0x00000062 System.Void Better.StreamingAssets.BSA_TestSceneGUI_<TestAllCoroutine>d__26::<>m__Finally2()
+extern void U3CTestAllCoroutineU3Ed__26_U3CU3Em__Finally2_mB707A8D8C4E69E44AE48B5D79CE6FB143DFDB07E (void);
+// 0x00000063 System.Void Better.StreamingAssets.BSA_TestSceneGUI_<TestAllCoroutine>d__26::<>m__Finally3()
+extern void U3CTestAllCoroutineU3Ed__26_U3CU3Em__Finally3_m1F79850D00674A237C77AEEF7278AA813C715AE3 (void);
+// 0x00000064 System.Void Better.StreamingAssets.BSA_TestSceneGUI_<TestAllCoroutine>d__26::<>m__Finally4()
+extern void U3CTestAllCoroutineU3Ed__26_U3CU3Em__Finally4_m54E80DAB02C13F1D466DAD74AF04996CED951D13 (void);
+// 0x00000065 System.Object Better.StreamingAssets.BSA_TestSceneGUI_<TestAllCoroutine>d__26::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CTestAllCoroutineU3Ed__26_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m886E8398FFFBEFFE20981F49590D32CD6FB45AE1 (void);
+// 0x00000066 System.Void Better.StreamingAssets.BSA_TestSceneGUI_<TestAllCoroutine>d__26::System.Collections.IEnumerator.Reset()
+extern void U3CTestAllCoroutineU3Ed__26_System_Collections_IEnumerator_Reset_m3B857C5FD7461B19AB00D8439039BE1B8AA04E7F (void);
+// 0x00000067 System.Object Better.StreamingAssets.BSA_TestSceneGUI_<TestAllCoroutine>d__26::System.Collections.IEnumerator.get_Current()
+extern void U3CTestAllCoroutineU3Ed__26_System_Collections_IEnumerator_get_Current_mD16EBE66D18062B593E61DF5D133E9EC8013AC75 (void);
+// 0x00000068 System.Void Better.StreamingAssets.BSA_TestSceneGUI_<ErrorCatchingCoroutine>d__28::.ctor(System.Int32)
+extern void U3CErrorCatchingCoroutineU3Ed__28__ctor_m9C4C4A29907CCF68633FB922ECED38BF1A029901 (void);
+// 0x00000069 System.Void Better.StreamingAssets.BSA_TestSceneGUI_<ErrorCatchingCoroutine>d__28::System.IDisposable.Dispose()
+extern void U3CErrorCatchingCoroutineU3Ed__28_System_IDisposable_Dispose_m125529E8F5C12DFF3A23DB52D6320EAD663A354E (void);
+// 0x0000006A System.Boolean Better.StreamingAssets.BSA_TestSceneGUI_<ErrorCatchingCoroutine>d__28::MoveNext()
+extern void U3CErrorCatchingCoroutineU3Ed__28_MoveNext_m3B3D5C30ADC6AB418A48E87F97255FC2E1464708 (void);
+// 0x0000006B System.Object Better.StreamingAssets.BSA_TestSceneGUI_<ErrorCatchingCoroutine>d__28::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CErrorCatchingCoroutineU3Ed__28_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m793CC2D5C0AA9851379A39D80485F230F23C21E3 (void);
+// 0x0000006C System.Void Better.StreamingAssets.BSA_TestSceneGUI_<ErrorCatchingCoroutine>d__28::System.Collections.IEnumerator.Reset()
+extern void U3CErrorCatchingCoroutineU3Ed__28_System_Collections_IEnumerator_Reset_m8B94B6D80059F95EECD1A73C5615AD9306B73ACC (void);
+// 0x0000006D System.Object Better.StreamingAssets.BSA_TestSceneGUI_<ErrorCatchingCoroutine>d__28::System.Collections.IEnumerator.get_Current()
+extern void U3CErrorCatchingCoroutineU3Ed__28_System_Collections_IEnumerator_get_Current_m134071D0B3C7FBB5B6D8B7EA6C1FA1084142DEBF (void);
+// 0x0000006E System.Void Better.StreamingAssets.BSA_TestSceneGUI_<TestHarness>d__29::.ctor(System.Int32)
+extern void U3CTestHarnessU3Ed__29__ctor_m46FFFD37160F20823301CF93CEAA5838BC130F73 (void);
+// 0x0000006F System.Void Better.StreamingAssets.BSA_TestSceneGUI_<TestHarness>d__29::System.IDisposable.Dispose()
+extern void U3CTestHarnessU3Ed__29_System_IDisposable_Dispose_m08D99786D7F0346D7B88AB251980D0A600B49A6E (void);
+// 0x00000070 System.Boolean Better.StreamingAssets.BSA_TestSceneGUI_<TestHarness>d__29::MoveNext()
+extern void U3CTestHarnessU3Ed__29_MoveNext_m54A6B2F98A902A029AE0583392D1879A7755A012 (void);
+// 0x00000071 System.Object Better.StreamingAssets.BSA_TestSceneGUI_<TestHarness>d__29::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CTestHarnessU3Ed__29_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mB946FBC633D7797BC8ED13B04B86DD8EDCA05515 (void);
+// 0x00000072 System.Void Better.StreamingAssets.BSA_TestSceneGUI_<TestHarness>d__29::System.Collections.IEnumerator.Reset()
+extern void U3CTestHarnessU3Ed__29_System_Collections_IEnumerator_Reset_m6D8BE76CD5B6958C98265DE97CCCD391F7466B2A (void);
+// 0x00000073 System.Object Better.StreamingAssets.BSA_TestSceneGUI_<TestHarness>d__29::System.Collections.IEnumerator.get_Current()
+extern void U3CTestHarnessU3Ed__29_System_Collections_IEnumerator_get_Current_m489B92A1891D97EBB595F1E6EC661BDBBE319594 (void);
+// 0x00000074 System.Void BetterStreamingAssets_ApkImpl_<>c__DisplayClass7_0::.ctor()
+extern void U3CU3Ec__DisplayClass7_0__ctor_m4FA897822E3876B98C7E2B15CAFD2A5BCCFE92C6 (void);
+// 0x00000075 System.Boolean BetterStreamingAssets_ApkImpl_<>c__DisplayClass7_0::<GetFiles>b__0(System.String)
+extern void U3CU3Ec__DisplayClass7_0_U3CGetFilesU3Eb__0_m876F94EA80C392A3F4DB7113E8DDE20966E400A7 (void);
+// 0x00000076 System.Void BetterStreamingAssets_ApkImpl_<>c__DisplayClass7_1::.ctor()
+extern void U3CU3Ec__DisplayClass7_1__ctor_m7326C2CD61A79848AACFBF81944E38BFBDDD89F8 (void);
+// 0x00000077 System.Boolean BetterStreamingAssets_ApkImpl_<>c__DisplayClass7_1::<GetFiles>b__1(System.String)
+extern void U3CU3Ec__DisplayClass7_1_U3CGetFilesU3Eb__1_m172F03DCF865525163C1D38BA04754E36E465DCD (void);
+static Il2CppMethodPointer s_methodPointers[119] = 
+{
+	BetterStreamingAssets_get_Root_mE1B339B0EB9E1AA72513A26E0AC5381837929402,
+	BetterStreamingAssets_Initialize_m04F4A2DCB250BE68D2949599CB7DC18D7D652103,
+	BetterStreamingAssets_FileExists_mDD99E2438FD0CAF434A34F6A6CF4D50942FCB36D,
+	BetterStreamingAssets_DirectoryExists_m00266C90B17DFF6BE94753F2743B9B19E5454AB1,
+	BetterStreamingAssets_LoadAssetBundleAsync_mC684781E322A029EED75E10DF342B15BAD368C43,
+	BetterStreamingAssets_LoadAssetBundle_m635CCC0E77C7A4B2CD0369FA4C9547013D50DE6A,
+	BetterStreamingAssets_OpenRead_mED2685FF7CBF44308FBF98F40D89DD93E0F39167,
+	BetterStreamingAssets_OpenText_m5C1218FF7A88C0E734DE7E8FCF15A171B902AE85,
+	BetterStreamingAssets_ReadAllText_m32749DD115876D378CE51B973C868B4328EE6B7E,
+	BetterStreamingAssets_ReadAllLines_m42075D3AEB7FECA17E35CD7575AD65572186BB20,
+	BetterStreamingAssets_ReadAllBytes_mE5361CA0667FA1A51CDE6789866ED25AF607993C,
+	BetterStreamingAssets_GetFiles_m921E0DAADD9BA4A50CEB9B05DFBB8CF5FB101F9F,
+	BetterStreamingAssets_GetFiles_m99EDEEAF484462FB2CDE8FE883818B000597F26F,
+	BetterStreamingAssets_GetFiles_m4FF51BE451E56C673579C3B80C95A50DCADCFBD4,
+	BetterStreamingAssets_GetInfoOrThrow_mC8B40A9547965B5A077BC6B0967035AA8887AB28,
+	BetterStreamingAssets_ThrowFileNotFound_mAA1D1AC36515A2228258D9CD741A97F1E9EEAECC,
+	PathUtil_IsDirectorySeparator_mC533AD50463A4840555728D68C6D260534C088E2,
+	PathUtil_FixTrailingDirectorySeparators_m85B7E697762C4C1EC410DDA817E1040D6530AF64,
+	PathUtil_CombineSlash_m624B03E180D3287A057AF20DCE240048AA6619B3,
+	PathUtil_NormalizeRelativePath_m3EEF2F2C57DD551059FADA52710D209C0CB52DA4,
+	PathUtil_IsValidCharacter_m16A2BD560960E553352967EBF8226A6BE49FD465,
+	PathUtil_WildcardToRegex_m475DB15BFD88EE4E1494E9BA42D0BCAC63523BEF,
+	SubReadOnlyStream__ctor_m2E182D4DBD0B779E2840F3B5CDB53C6AD225C05E,
+	SubReadOnlyStream__ctor_m824658E28BC6037A1E989A4B56D03C9CDC4C515B,
+	SubReadOnlyStream_get_Length_m3BF8A9CC6A0D13EF5628A52AD5297FAE9552EBDA,
+	SubReadOnlyStream_get_Position_m5568D774F47D11284C46986E55185EF77D231979,
+	SubReadOnlyStream_set_Position_m5C3237B49412E55D81F00A4438AF40FA9DB7AFC3,
+	SubReadOnlyStream_get_CanRead_m69DA489875D02BBBB8AF15130989191AAF8DFBD9,
+	SubReadOnlyStream_get_CanSeek_m9FE543790ED5F1F1608198045BEA0B1874388809,
+	SubReadOnlyStream_get_CanWrite_m70F8C501BF384ECCA62864738F3CE79B9F300091,
+	SubReadOnlyStream_Read_m30BEA529E449D97232722DD985479B7B28BCC709,
+	SubReadOnlyStream_Seek_mEFD0A91D3BB28903F455A5F31F2AA3C15033BBEC,
+	SubReadOnlyStream_SetLength_m00593189D0A7EE99772DA3FD2D29D9B4B471201C,
+	SubReadOnlyStream_Write_m184123E07D908CBCFE727FD5F795F0035AB86EE6,
+	SubReadOnlyStream_Flush_mBC2011695FF7A245B6A15D461A9346797A2F7C1C,
+	SubReadOnlyStream_Dispose_mF015F76B75950DEE8FE56996FD01660E4DA3DFB8,
+	SubReadOnlyStream_ThrowIfDisposed_mE82B3AAA2E199E1246262FB5CDC91B4D58181E6F,
+	SubReadOnlyStream_ThrowIfCantRead_m0F3156FA5C403CB214085D8ED9A07BA90E3B760E,
+	BSA_TestSceneGUI_OnEnable_m0E8F8A5E86C9CA722EBD21D65AF54D64506FDAE6,
+	BSA_TestSceneGUI_OnDisable_m32F8748EF7C59399DD1A7788CC5E1ADC628F43F1,
+	BSA_TestSceneGUI_OnGUI_m06D59D7CEDDFD82C6A643367BB05DD84857BEBDF,
+	BSA_TestSceneGUI_get_StreamingAssetsPath_mA8FA02EC9E1A7B4D4146DB461E3898DC8C1435B6,
+	BSA_TestSceneGUI_Initialize_m8E73A5001D68D9E765C177DA9F213FD3FF6CED0D,
+	BSA_TestSceneGUI_DoTestTypeToggle_m94CB13B21647D24E99216DA4E99356DC3ADF7B4B,
+	BSA_TestSceneGUI_DoReadModeToggle_mD9FB74773822E2108CAE71BE55B4186488CF0E7E,
+	BSA_TestSceneGUI_TestAllCoroutine_mC8C1ED2BC7C199EA437D4B973E0DFD22320A133E,
+	BSA_TestSceneGUI_LogWorkProgress_mFA79C567989C180D9D5445AB1A6A644ED8D2DB5B,
+	BSA_TestSceneGUI_ErrorCatchingCoroutine_mD296EA0C3ECB81BBE21F4516F81856C2B1F3C975,
+	BSA_TestSceneGUI_TestHarness_mF6E43DCCBB679EAD7B4A2B6246D0B6CE13E65DD3,
+	BSA_TestSceneGUI__ctor_m8D55F54C97777FCB2BBC47CE99AFE997315E4CC6,
+	ZipGenericExtraField_get_Tag_mE1447378284194E19B2820271E76A076884479BB_AdjustorThunk,
+	ZipGenericExtraField_get_Size_mACA634AD0BD92C08B2E0F4D268704BE3754386A1_AdjustorThunk,
+	ZipGenericExtraField_get_Data_mE709A336E46D908F8775C545DFBF76E0B528881B_AdjustorThunk,
+	ZipGenericExtraField_TryReadBlock_mB4FF1FB0CBB0B8F3D5F384D783E31E475F86AAB3,
+	Zip64ExtraField_get_UncompressedSize_m27725674A60CDD339E16741A5B9A1C34AF6CBAB0_AdjustorThunk,
+	Zip64ExtraField_set_UncompressedSize_m37E4440B96AE49C5A886869EE1B9183594100C07_AdjustorThunk,
+	Zip64ExtraField_get_CompressedSize_m56DA9D6A72E3439BD418AD2BD115FF7E512E319C_AdjustorThunk,
+	Zip64ExtraField_set_CompressedSize_m48D75BDB894F098D7955B13A62E309DD8E444417_AdjustorThunk,
+	Zip64ExtraField_get_LocalHeaderOffset_m3889B68FF7B34436823B7D600466546B7204CAA7_AdjustorThunk,
+	Zip64ExtraField_set_LocalHeaderOffset_m63B83B7400B662A58E5C1F5397CD35D2EDE0E98E_AdjustorThunk,
+	Zip64ExtraField_get_StartDiskNumber_mB318D7B612F27FD5C24EE41BCEF6CCFA61FF02B4_AdjustorThunk,
+	Zip64ExtraField_UpdateSize_m7F3953688E926BE0DAA19D29E6902EB9FC015C3B_AdjustorThunk,
+	Zip64ExtraField_GetJustZip64Block_m417F37E00E43F28C4FBEC206F46947CF07A71041,
+	Zip64ExtraField_TryGetZip64BlockFromGenericExtraField_m41C808711891DBD05A5980E6328658895AEF2E38,
+	Zip64EndOfCentralDirectoryLocator_TryReadBlock_mF63B25D17825F6793D7B1F31CE2FC3458C4C4A2C,
+	Zip64EndOfCentralDirectoryRecord_TryReadBlock_mC7D6EEB6599B3F198D14FFEB70E4D21FDD7AA6BD,
+	ZipLocalFileHeader_TrySkipBlock_m24428E5E4166A84A34BD0806C1BFA58250186728,
+	ZipCentralDirectoryFileHeader_TryReadBlock_m9EE07A8908FB3E923B2F5F90A7D06F0F55351781,
+	ZipEndOfCentralDirectoryBlock_TryReadBlock_mF8B8C584A1BC2CE869E28A2025A83C1976A58A7F,
+	ZipHelper_ReadBytes_mAA2E1834857097160DDBCC7B70EBA2B35840C59A,
+	ZipHelper_SeekBackwardsToSignature_m82683FE7163F17FC4522F4384BC491C154077C9D,
+	ZipHelper_AdvanceToPosition_m658B0AA7C773A1550A8137206CE24B5377C91685,
+	ZipHelper_SeekBackwardsAndRead_m8B88CB9C7091279DE1AB71932D8A9581BB508AA5,
+	ZipArchiveException__ctor_mBF77403E9666E8DB9913F82628A0618253EC054D,
+	ZipArchiveException__ctor_m14E76998849FBD303E213389BD94DFFC85E24BF5,
+	ZipArchiveUtils_ReadEndOfCentralDirectory_m5EEC63207802B6771CBBB2D4F6D06FB945B35BBE,
+	ApkImpl_Initialize_m024C948123F4D400046870EDE5F5C5416DE15717,
+	ApkImpl_TryGetInfo_mD5BB2E535C92DAC89794B92ACE86BE170D7649BE,
+	ApkImpl_DirectoryExists_m257D9E8408AE4E310A20960F8FD6B715AE3F18B3,
+	ApkImpl_GetFiles_m793AC66400F7026EDC0482657A8B82ECA2FD30F9,
+	ApkImpl_ReadAllBytes_m071CC80C6953A72F9A2AC6A73C855DC86119A206,
+	ApkImpl_OpenRead_m893E7D1CB0C8DC69BE1E4513AC870E2BA282C027,
+	ApkImpl_GetDirectoryIndex_mD8C233B5CE0B0A0F965265E47FC5EB1C867AC6DA,
+	ApkImpl_GetStreamingAssetsInfoFromJar_m5E5FDAFF107B3AD556460AF6B70AFE1144124BCF,
+	CoroutineHost__ctor_m8C9DF8FAAEBFAC03D1BE7D9027CFFFC6EC96FA43,
+	TestInfo__ctor_m1F54948994C0CA4AD698CF66B4D20C6A336CEEAF,
+	TestResultDelegate__ctor_m639D73102BD81C1543FFE2B24C53D5ECBED7C3E4,
+	TestResultDelegate_Invoke_mCD4C9CC88C790ECD24E870DCE5B0903ADD467AB8,
+	TestResultDelegate_BeginInvoke_mF1DB3FA72740EE3426F4CC8B87DEB674FAFA0529,
+	TestResultDelegate_EndInvoke_m8223969D4EC1B6BD9FAC3CB2D7A2C895ED19AD58,
+	U3CU3Ec__DisplayClass26_0__ctor_m985541E6288B3266DDA97FA3A806450426EB9B70,
+	U3CU3Ec__DisplayClass26_0_U3CTestAllCoroutineU3Eb__0_m8C1D63726B42B652282E14783887144CDE2BB60F,
+	U3CU3Ec__DisplayClass26_0_U3CTestAllCoroutineU3Eb__1_m60877FF3F807A49CFB87A4A46F51112F84BEF3AA,
+	U3CTestAllCoroutineU3Ed__26__ctor_m3E9D7FEA94E862E2072DB2BA91F603CD9B689B73,
+	U3CTestAllCoroutineU3Ed__26_System_IDisposable_Dispose_mE75A755944C3ABC52BBD6ACECD42FB84ED7B2753,
+	U3CTestAllCoroutineU3Ed__26_MoveNext_mF90DBEB0EA6FEF9E68F9D74DD61255E64FA1C895,
+	U3CTestAllCoroutineU3Ed__26_U3CU3Em__Finally1_m2683099B05E208755B9BF5980F6FA69DEDDBB865,
+	U3CTestAllCoroutineU3Ed__26_U3CU3Em__Finally2_mB707A8D8C4E69E44AE48B5D79CE6FB143DFDB07E,
+	U3CTestAllCoroutineU3Ed__26_U3CU3Em__Finally3_m1F79850D00674A237C77AEEF7278AA813C715AE3,
+	U3CTestAllCoroutineU3Ed__26_U3CU3Em__Finally4_m54E80DAB02C13F1D466DAD74AF04996CED951D13,
+	U3CTestAllCoroutineU3Ed__26_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m886E8398FFFBEFFE20981F49590D32CD6FB45AE1,
+	U3CTestAllCoroutineU3Ed__26_System_Collections_IEnumerator_Reset_m3B857C5FD7461B19AB00D8439039BE1B8AA04E7F,
+	U3CTestAllCoroutineU3Ed__26_System_Collections_IEnumerator_get_Current_mD16EBE66D18062B593E61DF5D133E9EC8013AC75,
+	U3CErrorCatchingCoroutineU3Ed__28__ctor_m9C4C4A29907CCF68633FB922ECED38BF1A029901,
+	U3CErrorCatchingCoroutineU3Ed__28_System_IDisposable_Dispose_m125529E8F5C12DFF3A23DB52D6320EAD663A354E,
+	U3CErrorCatchingCoroutineU3Ed__28_MoveNext_m3B3D5C30ADC6AB418A48E87F97255FC2E1464708,
+	U3CErrorCatchingCoroutineU3Ed__28_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m793CC2D5C0AA9851379A39D80485F230F23C21E3,
+	U3CErrorCatchingCoroutineU3Ed__28_System_Collections_IEnumerator_Reset_m8B94B6D80059F95EECD1A73C5615AD9306B73ACC,
+	U3CErrorCatchingCoroutineU3Ed__28_System_Collections_IEnumerator_get_Current_m134071D0B3C7FBB5B6D8B7EA6C1FA1084142DEBF,
+	U3CTestHarnessU3Ed__29__ctor_m46FFFD37160F20823301CF93CEAA5838BC130F73,
+	U3CTestHarnessU3Ed__29_System_IDisposable_Dispose_m08D99786D7F0346D7B88AB251980D0A600B49A6E,
+	U3CTestHarnessU3Ed__29_MoveNext_m54A6B2F98A902A029AE0583392D1879A7755A012,
+	U3CTestHarnessU3Ed__29_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mB946FBC633D7797BC8ED13B04B86DD8EDCA05515,
+	U3CTestHarnessU3Ed__29_System_Collections_IEnumerator_Reset_m6D8BE76CD5B6958C98265DE97CCCD391F7466B2A,
+	U3CTestHarnessU3Ed__29_System_Collections_IEnumerator_get_Current_m489B92A1891D97EBB595F1E6EC661BDBBE319594,
+	U3CU3Ec__DisplayClass7_0__ctor_m4FA897822E3876B98C7E2B15CAFD2A5BCCFE92C6,
+	U3CU3Ec__DisplayClass7_0_U3CGetFilesU3Eb__0_m876F94EA80C392A3F4DB7113E8DDE20966E400A7,
+	U3CU3Ec__DisplayClass7_1__ctor_m7326C2CD61A79848AACFBF81944E38BFBDDD89F8,
+	U3CU3Ec__DisplayClass7_1_U3CGetFilesU3Eb__1_m172F03DCF865525163C1D38BA04754E36E465DCD,
+};
+static const int32_t s_InvokerIndices[119] = 
+{
+	4,
+	3,
+	109,
+	109,
+	126,
+	126,
+	0,
+	0,
+	0,
+	0,
+	0,
+	545,
+	0,
+	1,
+	1840,
+	159,
+	48,
+	0,
+	1,
+	158,
+	48,
+	0,
+	102,
+	1841,
+	177,
+	177,
+	205,
+	89,
+	89,
+	89,
+	495,
+	718,
+	205,
+	35,
+	23,
+	31,
+	23,
+	23,
+	23,
+	23,
+	23,
+	14,
+	23,
+	32,
+	32,
+	1842,
+	26,
+	114,
+	1843,
+	23,
+	241,
+	241,
+	14,
+	751,
+	1846,
+	1847,
+	1846,
+	1847,
+	1846,
+	1847,
+	762,
+	23,
+	1848,
+	1849,
+	220,
+	220,
+	109,
+	220,
+	220,
+	200,
+	106,
+	157,
+	380,
+	26,
+	27,
+	44,
+	143,
+	220,
+	109,
+	545,
+	0,
+	0,
+	94,
+	191,
+	23,
+	23,
+	131,
+	1844,
+	1845,
+	26,
+	23,
+	1844,
+	26,
+	32,
+	23,
+	89,
+	23,
+	23,
+	23,
+	23,
+	14,
+	23,
+	14,
+	32,
+	23,
+	89,
+	14,
+	23,
+	14,
+	32,
+	23,
+	89,
+	14,
+	23,
+	14,
+	23,
+	9,
+	23,
+	9,
+};
+extern const Il2CppCodeGenModule g_AssemblyU2DCSharpU2DfirstpassCodeGenModule;
+const Il2CppCodeGenModule g_AssemblyU2DCSharpU2DfirstpassCodeGenModule = 
+{
+	"Assembly-CSharp-firstpass.dll",
+	119,
+	s_methodPointers,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+};

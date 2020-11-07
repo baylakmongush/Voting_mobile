@@ -3505,7 +3505,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CP51932_GetByteCountImpl_m33111D9AD6B
 		Il2CppChar* L_1 = ___chars0;
 		int32_t L_2 = ___count1;
 		NullCheck(L_0);
-		int32_t L_3 = VirtFuncInvoker3< int32_t, Il2CppChar*, int32_t, bool >::Invoke(11 /* System.Int32 I18N.CJK.CP51932Encoder::GetByteCountImpl(System.Char*,System.Int32,System.Boolean) */, L_0, (Il2CppChar*)(Il2CppChar*)L_1, L_2, (bool)1);
+		int32_t L_3 = VirtFuncInvoker3< int32_t, Il2CppChar*, int32_t, bool >::Invoke(9 /* System.Int32 I18N.CJK.CP51932Encoder::GetByteCountImpl(System.Char*,System.Int32,System.Boolean) */, L_0, (Il2CppChar*)(Il2CppChar*)L_1, L_2, (bool)1);
 		return L_3;
 	}
 }
@@ -3526,7 +3526,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CP51932_GetBytesImpl_m8F9120993EF113A
 		uint8_t* L_3 = ___bytes2;
 		int32_t L_4 = ___byteCount3;
 		NullCheck(L_0);
-		int32_t L_5 = VirtFuncInvoker5< int32_t, Il2CppChar*, int32_t, uint8_t*, int32_t, bool >::Invoke(12 /* System.Int32 I18N.CJK.CP51932Encoder::GetBytesImpl(System.Char*,System.Int32,System.Byte*,System.Int32,System.Boolean) */, L_0, (Il2CppChar*)(Il2CppChar*)L_1, L_2, (uint8_t*)(uint8_t*)L_3, L_4, (bool)1);
+		int32_t L_5 = VirtFuncInvoker5< int32_t, Il2CppChar*, int32_t, uint8_t*, int32_t, bool >::Invoke(10 /* System.Int32 I18N.CJK.CP51932Encoder::GetBytesImpl(System.Char*,System.Int32,System.Byte*,System.Int32,System.Boolean) */, L_0, (Il2CppChar*)(Il2CppChar*)L_1, L_2, (uint8_t*)(uint8_t*)L_3, L_4, (bool)1);
 		return L_5;
 	}
 }
@@ -8897,7 +8897,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CodeTable__ctor_m42A12B0CFDDC04C2DD2BD47
 		Assembly_t * L_0 = il2cpp_codegen_get_executing_assembly(CodeTable__ctor_m42A12B0CFDDC04C2DD2BD473C3C2CAC6D495E045_RuntimeMethod_var);
 		String_t* L_1 = ___name0;
 		NullCheck(L_0);
-		Stream_tFC50657DD5AAB87770987F9179D934A51D99D5E7 * L_2 = VirtFuncInvoker1< Stream_tFC50657DD5AAB87770987F9179D934A51D99D5E7 *, String_t* >::Invoke(16 /* System.IO.Stream System.Reflection.Assembly::GetManifestResourceStream(System.String) */, L_0, L_1);
+		Stream_tFC50657DD5AAB87770987F9179D934A51D99D5E7 * L_2 = VirtFuncInvoker1< Stream_tFC50657DD5AAB87770987F9179D934A51D99D5E7 *, String_t* >::Invoke(14 /* System.IO.Stream System.Reflection.Assembly::GetManifestResourceStream(System.String) */, L_0, L_1);
 		__this->set_stream_0(L_2);
 		Stream_tFC50657DD5AAB87770987F9179D934A51D99D5E7 * L_3 = __this->get_stream_0();
 		if (L_3)
@@ -8932,7 +8932,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CodeTable_Dispose_m6D2FD56DC210177096EBE
 	{
 		Stream_tFC50657DD5AAB87770987F9179D934A51D99D5E7 * L_1 = __this->get_stream_0();
 		NullCheck(L_1);
-		VirtActionInvoker0::Invoke(17 /* System.Void System.IO.Stream::Close() */, L_1);
+		VirtActionInvoker0::Invoke(15 /* System.Void System.IO.Stream::Close() */, L_1);
 		__this->set_stream_0((Stream_tFC50657DD5AAB87770987F9179D934A51D99D5E7 *)NULL);
 	}
 
@@ -8988,7 +8988,7 @@ IL_0028:
 		Stream_tFC50657DD5AAB87770987F9179D934A51D99D5E7 * L_6 = __this->get_stream_0();
 		ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_7 = V_2;
 		NullCheck(L_6);
-		int32_t L_8 = VirtFuncInvoker3< int32_t, ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(29 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_6, L_7, 0, 8);
+		int32_t L_8 = VirtFuncInvoker3< int32_t, ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(26 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_6, L_7, 0, 8);
 		if ((((int32_t)L_8) == ((int32_t)8)))
 		{
 			goto IL_004d;
@@ -9049,7 +9049,7 @@ IL_004d:
 		ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_38 = V_5;
 		int32_t L_39 = V_4;
 		NullCheck(L_37);
-		int32_t L_40 = VirtFuncInvoker3< int32_t, ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(29 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_37, L_38, 0, L_39);
+		int32_t L_40 = VirtFuncInvoker3< int32_t, ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(26 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_37, L_38, 0, L_39);
 		int32_t L_41 = V_4;
 		if ((((int32_t)L_40) == ((int32_t)L_41)))
 		{
@@ -11298,7 +11298,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GB18030Encoding_GetByteCountImpl_mC91
 		Il2CppChar* L_1 = ___chars0;
 		int32_t L_2 = ___count1;
 		NullCheck(L_0);
-		int32_t L_3 = VirtFuncInvoker3< int32_t, Il2CppChar*, int32_t, bool >::Invoke(11 /* System.Int32 I18N.CJK.GB18030Encoder::GetByteCountImpl(System.Char*,System.Int32,System.Boolean) */, L_0, (Il2CppChar*)(Il2CppChar*)L_1, L_2, (bool)1);
+		int32_t L_3 = VirtFuncInvoker3< int32_t, Il2CppChar*, int32_t, bool >::Invoke(9 /* System.Int32 I18N.CJK.GB18030Encoder::GetByteCountImpl(System.Char*,System.Int32,System.Boolean) */, L_0, (Il2CppChar*)(Il2CppChar*)L_1, L_2, (bool)1);
 		return L_3;
 	}
 }
@@ -11319,7 +11319,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GB18030Encoding_GetBytesImpl_m5EDAA9D
 		uint8_t* L_3 = ___bytes2;
 		int32_t L_4 = ___byteCount3;
 		NullCheck(L_0);
-		int32_t L_5 = VirtFuncInvoker5< int32_t, Il2CppChar*, int32_t, uint8_t*, int32_t, bool >::Invoke(12 /* System.Int32 I18N.CJK.GB18030Encoder::GetBytesImpl(System.Char*,System.Int32,System.Byte*,System.Int32,System.Boolean) */, L_0, (Il2CppChar*)(Il2CppChar*)L_1, L_2, (uint8_t*)(uint8_t*)L_3, L_4, (bool)1);
+		int32_t L_5 = VirtFuncInvoker5< int32_t, Il2CppChar*, int32_t, uint8_t*, int32_t, bool >::Invoke(10 /* System.Int32 I18N.CJK.GB18030Encoder::GetBytesImpl(System.Char*,System.Int32,System.Byte*,System.Int32,System.Boolean) */, L_0, (Il2CppChar*)(Il2CppChar*)L_1, L_2, (uint8_t*)(uint8_t*)L_3, L_4, (bool)1);
 		return L_5;
 	}
 }
@@ -14359,7 +14359,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ISO2022JPEncoding_GetByteCountImpl_mC
 		Il2CppChar* L_3 = ___chars0;
 		int32_t L_4 = ___count1;
 		NullCheck(L_2);
-		int32_t L_5 = VirtFuncInvoker3< int32_t, Il2CppChar*, int32_t, bool >::Invoke(11 /* System.Int32 I18N.CJK.ISO2022JPEncoder::GetByteCountImpl(System.Char*,System.Int32,System.Boolean) */, L_2, (Il2CppChar*)(Il2CppChar*)L_3, L_4, (bool)1);
+		int32_t L_5 = VirtFuncInvoker3< int32_t, Il2CppChar*, int32_t, bool >::Invoke(9 /* System.Int32 I18N.CJK.ISO2022JPEncoder::GetByteCountImpl(System.Char*,System.Int32,System.Boolean) */, L_2, (Il2CppChar*)(Il2CppChar*)L_3, L_4, (bool)1);
 		return L_5;
 	}
 }
@@ -14382,7 +14382,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ISO2022JPEncoding_GetBytesImpl_m5ADED
 		uint8_t* L_5 = ___bytes2;
 		int32_t L_6 = ___byteCount3;
 		NullCheck(L_2);
-		int32_t L_7 = VirtFuncInvoker5< int32_t, Il2CppChar*, int32_t, uint8_t*, int32_t, bool >::Invoke(12 /* System.Int32 I18N.CJK.ISO2022JPEncoder::GetBytesImpl(System.Char*,System.Int32,System.Byte*,System.Int32,System.Boolean) */, L_2, (Il2CppChar*)(Il2CppChar*)L_3, L_4, (uint8_t*)(uint8_t*)L_5, L_6, (bool)1);
+		int32_t L_7 = VirtFuncInvoker5< int32_t, Il2CppChar*, int32_t, uint8_t*, int32_t, bool >::Invoke(10 /* System.Int32 I18N.CJK.ISO2022JPEncoder::GetBytesImpl(System.Char*,System.Int32,System.Byte*,System.Int32,System.Boolean) */, L_2, (Il2CppChar*)(Il2CppChar*)L_3, L_4, (uint8_t*)(uint8_t*)L_5, L_6, (bool)1);
 		return L_7;
 	}
 }

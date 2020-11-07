@@ -75,7 +75,6 @@
     <Compile Include="Assets\Scripts\PrevScene.cs" />
     <Compile Include="Assets\Scripts\ScreenFrame.cs" />
     <Compile Include="Assets\Scripts\SelectCountry.cs" />
-    <Compile Include="Assets\Scripts\Server\DBManager.cs" />
     <Compile Include="Assets\Scripts\Server\GetStatistics.cs" />
     <Compile Include="Assets\Scripts\Server\PostData.cs" />
     <Compile Include="Assets\Scripts\Server\Request.cs" />
@@ -257,39 +256,6 @@
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.10f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="I18N.CJK">
-      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Assets/Plugins/I18N.CJK.dll</HintPath>
-    </Reference>
-    <Reference Include="I18N">
-      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Assets/Plugins/I18N.dll</HintPath>
-    </Reference>
-    <Reference Include="I18N.MidEast">
-      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Assets/Plugins/I18N.MidEast.dll</HintPath>
-    </Reference>
-    <Reference Include="I18N.Other">
-      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Assets/Plugins/I18N.Other.dll</HintPath>
-    </Reference>
-    <Reference Include="I18N.Rare">
-      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Assets/Plugins/I18N.Rare.dll</HintPath>
-    </Reference>
-    <Reference Include="I18N.West">
-      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Assets/Plugins/I18N.West.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Data.Sqlite">
-      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
-    </Reference>
-    <Reference Include="mysql.data">
-      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Assets/Plugins/mysql.data.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Data">
-      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Assets/Plugins/System.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="System.EnterpriseServices">
-      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Assets/Plugins/System.EnterpriseServices.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security">
-      <HintPath>D:/Projects/game/Voting_mobile/Voting mobile application/Assets/Plugins/System.Security.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.10f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

@@ -549,12 +549,6 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DBManager
-  - hash:
-      serializedVersion: 2
       Hash: 5cece098efa6e473b545aaa31e083c4c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -783,7 +777,7 @@ ScriptsOnlyBuild:
     className: AudioTrack
   - hash:
       serializedVersion: 2
-      Hash: b6830723a6443c9387a1c7253a8907bc
+      Hash: 7167e8def1a0448c9b09bddf8e0122e3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SelectCountry
@@ -907,6 +901,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: e4fabdf71885faa62dedeb4f52da41fd
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: Better.StreamingAssets
+    className: BSA_TestSceneGUI
   platform: 13
   scenePathNames:
   - Assets/Scenes/Greeting.unity
@@ -915,4 +915,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/PC.unity
   - Assets/Scenes/Voting.unity
   - Assets/Scenes/Statistics.unity
-  playerPath: D:/Projects/tests/new.apk
+  playerPath: D:/Projects/tests/androidvote.apk
