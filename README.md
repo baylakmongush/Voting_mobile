@@ -12,4 +12,4 @@
 Ссылка на видео:
 https://youtu.be/5sEd0JwcuiA
 
-![screenshot of sample](http://webdesign.ru.net/images/Heydon_min.jpg)
+![screenshot of sample](https://github.com/npetrelli/Voting_mobile/blob/main/scsht.png)
