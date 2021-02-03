@@ -12,4 +12,4 @@
 Ссылка на видео:
 https://youtu.be/5sEd0JwcuiA
 
-![screenshot of sample](https://github.com/npetrelli/Voting_mobile/blob/main/scsht.png  | width=48)
+<img src="https://github.com/npetrelli/Voting_mobile/blob/main/scsht.png" height="24" width="48">
